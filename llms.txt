@@ -8,6 +8,14 @@
 - [Physical interpretation](science/interpretation.md): variance confounding, temporary plateaus, closing and returning relative advantage, and calibration crossovers.
 - [Repository overview](README.md): headline result, reading routes, scope and reproduction.
 
+## Learning route
+
+- [30-milestone map](learning/milestones.md): the common project-defined route, exactly M01–M30, with 12 background/preliminaries and 18 narrative/innovation milestones. Each gives a central question, understanding target, dependencies, conceptual connection and scientific source pointers.
+- [Tsang bridge](learning/tsang-bridge.md): the sole educational anchor, Mankei Tsang's Resolving starlight: a quantum perspective, arXiv:1906.02064v2; useful source sections, notation translation, worked variance-matching example, and the steps from imaging foundations to the finite-calibration frontier.
+- For self-directed study, follow the bridge alongside the milestone dependencies. The map is defined by the project rather than by any reader's assessment history.
+- The review supplies imaging and measurement foundations. The exact finite-error tests, invariant and infinite-dimensional collision argument require the project proofs and their primary research dependencies. Those citations are not additional educational anchors.
+- In the review, theta denotes full separation, q is a mode label and Appendix C's M counts temporal modes. Here s=2a is full separation, q=a²/u is squared half-separation, and M counts calibration photons. The bridge also distinguishes the review's object moments from the project's quadratic statistic theta.
+
 ## Theorem and proof routes
 
 - [Quantum converse](science/quantum-converse.md): lower bound for every joint receiver; pure-state floor and nuisance-matched hard pair.
