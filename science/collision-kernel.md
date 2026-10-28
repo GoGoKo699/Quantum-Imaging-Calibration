@@ -29,10 +29,10 @@ For a faithful reference state $`\tau`$, the weighted collision quantity is
 ```math
 \chi^2_{1/2}(\rho\Vert\tau)
 =\left\|\tau^{-1/4}(\rho-\tau)\tau^{-1/4}\right\|_2^2
-=\operatorname{Tr}\!\left[(\tau^{-1/4}\rho\tau^{-1/4})^2\right]-1,
+=\mathrm{Tr}\!\left[(\tau^{-1/4}\rho\tau^{-1/4})^2\right]-1,
 ```
 
-whenever the displayed weighted operators are well defined. The subscript identifies the weighting convention. This is $`\exp[\widetilde D_2(\rho\Vert\tau)]-1`$ for the sandwiched Rényi relative entropy, rather than the Petz expression $`\operatorname{Tr}(\rho^2\tau^{-1})-1`$. The sandwiched relative-entropy framework is established in [Müller-Lennert et al.](https://arxiv.org/abs/1306.3142); general Gaussian-state formulas are developed by [Seshadreesan, Lami and Wilde](https://arxiv.org/abs/1706.09885). The two-source state $`\rho_{a,v}`$ is generally non-Gaussian.
+whenever the displayed weighted operators are well defined. The subscript identifies the weighting convention. This is $`\exp[\widetilde D_2(\rho\Vert\tau)]-1`$ for the sandwiched Rényi relative entropy, rather than the Petz expression $`\mathrm{Tr}(\rho^2\tau^{-1})-1`$. The sandwiched relative-entropy framework is established in [Müller-Lennert et al.](https://arxiv.org/abs/1306.3142); general Gaussian-state formulas are developed by [Seshadreesan, Lami and Wilde](https://arxiv.org/abs/1706.09885). The two-source state $`\rho_{a,v}`$ is generally non-Gaussian.
 
 ## 2. Squeezed thermal decomposition
 
@@ -110,7 +110,7 @@ f_x(\zeta)=(1+r)^{1/4}e^{-x^2/[4(u+w)]}
 
 Writing $`\zeta=s+it`$, the quadratic terms in its norm integral are
 $`-(1+\sqrt r)s^2-(1-\sqrt r)t^2`$. Both coefficients are strictly negative. Thus $`f_x`$ has finite Bargmann norm for every real $`x`$, which proves
-$`\psi_x\in\operatorname{Dom}\tau_v^{-1/4}`$.
+$`\psi_x\in\mathrm{Dom}\tau_v^{-1/4}`$.
 
 The same integral evaluates the inner product explicitly:
 
@@ -173,7 +173,7 @@ This identity follows first for the rank-one integrands and then for their trace
 Furthermore,
 
 ```math
-\operatorname{Tr}(T_p\tau_v^{1/2})
+\mathrm{Tr}(T_p\tau_v^{1/2})
 =\int\langle\xi_x|\tau_v^{1/2}|\xi_x\rangle p(dx)=1.
 ```
 
@@ -181,7 +181,7 @@ Thus the two definitions of the collision quantity agree, and
 
 ```math
 1+\chi^2_{1/2}(\rho_p\Vert\tau_v)
-=\operatorname{Tr}(T_p^2)
+=\mathrm{Tr}(T_p^2)
 =\iint K_v(x,y)\,p(dx)p(dy).
 ```
 

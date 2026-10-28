@@ -25,9 +25,9 @@ Fix $`\epsilon\in(0,1/2)`$ and $`q_{\max}\in(0,1]`$. A test effect $`T`$ means d
 
 ```math
 \mathcal R_Q(h)=\inf_{0\le T\le I}\max\left\{
-\sup_{0\le v\le ub}\operatorname{Tr}(\Omega_{0,v}T),
+\sup_{0\le v\le ub}\mathrm{Tr}(\Omega_{0,v}T),
 \sup_{\substack{0\le v\le ub\\h\le q\le q_{\max}}}
-\operatorname{Tr}[\Omega_{q,v}(I-T)]
+\mathrm{Tr}[\Omega_{q,v}(I-T)]
 \right\}.
 ```
 
@@ -70,13 +70,13 @@ D(\sigma_0,\sigma_1)=\frac12\|\sigma_0-\sigma_1\|_1.
 Every binary test satisfies
 
 ```math
-\frac12\left[\operatorname{Tr}(\sigma_0T)
-+\operatorname{Tr}[\sigma_1(I-T)]\right]
+\frac12\left[\mathrm{Tr}(\sigma_0T)
++\mathrm{Tr}[\sigma_1(I-T)]\right]
 \ge\frac{1-D(\sigma_0,\sigma_1)}2.
 ```
 
 Indeed, the left side is
-$`\tfrac12[1-\operatorname{Tr}T(\sigma_1-\sigma_0)]`$, and trace-distance duality bounds the last trace by $`D`$. The maximum of the two errors is at least their average. A single admissible pair with small trace distance therefore proves a lower bound on the stated composite risk.
+$`\tfrac12[1-\mathrm{Tr}T(\sigma_1-\sigma_0)]`$, and trace-distance duality bounds the last trace by $`D`$. The maximum of the two errors is at least their average. A single admissible pair with small trace distance therefore proves a lower bound on the stated composite risk.
 
 All processing by the receiver is a quantum channel followed by a measurement; trace distance cannot increase under such processing. The converse is consequently independent of the choice of spatial measurement or quantum implementation.
 
@@ -112,12 +112,12 @@ T_\rho=\tau^{-1/4}\rho\tau^{-1/4}
 
 as a positive trace-class integral. In particular,
 $`\rho=\tau^{1/4}T_\rho\tau^{1/4}`$ and
-$`\operatorname{Tr}(T_\rho\tau^{1/2})=1`$. Consequently,
+$`\mathrm{Tr}(T_\rho\tau^{1/2})=1`$. Consequently,
 
 ```math
 \chi^2_{1/2}(\rho\Vert\tau)
 =\|T_\rho-\tau^{1/2}\|_2^2
-=\operatorname{Tr}(T_\rho^2)-1.
+=\mathrm{Tr}(T_\rho^2)-1.
 ```
 
 ### Trace-distance bound
@@ -125,8 +125,8 @@ $`\operatorname{Tr}(T_\rho\tau^{1/2})=1`$. Consequently,
 Let $`B=T_\rho-\tau^{1/2}`$. For a Hermitian contraction $`H`$,
 
 ```math
-|\operatorname{Tr}[(\rho-\tau)H]|
-=|\operatorname{Tr}[B\tau^{1/4}H\tau^{1/4}]|
+|\mathrm{Tr}[(\rho-\tau)H]|
+=|\mathrm{Tr}[B\tau^{1/4}H\tau^{1/4}]|
 \le\|B\|_2\,\|\tau^{1/4}H\tau^{1/4}\|_2.
 ```
 
@@ -135,7 +135,7 @@ The products are legitimate by Schatten Hölder inequalities: $`B`$ is Hilbert-S
 ```math
 \|\tau^{1/4}H\tau^{1/4}\|_2^2
 =\sum_{i,j}\sqrt{\lambda_i\lambda_j}|H_{ij}|^2
-\le\operatorname{Tr}(\tau H^2)\le1.
+\le\mathrm{Tr}(\tau H^2)\le1.
 ```
 
 The middle inequality uses $`\sqrt{\lambda_i\lambda_j}\le(\lambda_i+\lambda_j)/2`$. Taking the dual supremum gives

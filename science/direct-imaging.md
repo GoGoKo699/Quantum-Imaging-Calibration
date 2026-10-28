@@ -54,7 +54,7 @@ A signal observation can be written as $`Y=\sqrt{1+B}\,G+\sqrt q\,S`$, with $`G`
 ```math
 \mathbb EY^2=T,\qquad
 \mathbb EY^4=3T^2-2q^2,\qquad
-\operatorname{Var}(Y^2)=2T^2-2q^2\le2T_{\max}^2.
+\mathrm{Var}(Y^2)=2T^2-2q^2\le2T_{\max}^2.
 ```
 
 More generally,
@@ -99,7 +99,7 @@ Write $`m_{2r}=\mathbb EY^{2r}`$. The second moment is
 The U-statistic variance identity, including its order-$`N^{-2}`$ term, gives
 
 ```math
-\operatorname{Var}(\widehat C_4)
+\mathrm{Var}(\widehat C_4)
 \le\frac{4\mathbb EH^2}{N}
 \le\frac{V_4}{N},
 \qquad V_4=552T_{\max}^4.
@@ -178,20 +178,20 @@ For two probability laws $`P_0,P_1`$, write
 \chi^2(P_1\Vert P_0)
 =\int\frac{(dP_1-dP_0)^2}{dP_0},
 \qquad
-\operatorname{TV}(P_0,P_1)
+\mathrm{TV}(P_0,P_1)
 =\frac12\int|dP_1-dP_0|.
 ```
 
 Cauchy–Schwarz gives
 
 ```math
-\operatorname{TV}(P_0,P_1)\le\frac12\sqrt{\chi^2(P_1\Vert P_0)}.
+\mathrm{TV}(P_0,P_1)\le\frac12\sqrt{\chi^2(P_1\Vert P_0)}.
 ```
 
 For any test, its larger error is at least its equal-prior average error and hence at least
 
 ```math
-\frac{1-\operatorname{TV}(P_0,P_1)}2.
+\frac{1-\mathrm{TV}(P_0,P_1)}2.
 ```
 
 This also lower-bounds the composite minimax risk whenever the two laws are allowed null and alternative instances.
@@ -205,7 +205,7 @@ To keep the lower theorem strictly above $`\epsilon`$, define
 If $`\log[1+\chi^2(P_1\Vert P_0)]\le\zeta_\epsilon`$, then
 
 ```math
-\operatorname{TV}(P_0,P_1)\le\frac{1-2\epsilon}{2},
+\mathrm{TV}(P_0,P_1)\le\frac{1-2\epsilon}{2},
 \qquad
 \max(\text{two errors})\ge\frac{1+2\epsilon}{4}>\epsilon.
 ```
