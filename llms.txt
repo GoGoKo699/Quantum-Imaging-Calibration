@@ -1,0 +1,41 @@
+# Quantum Imaging Calibration
+
+> Uniform fixed-error quantum and direct-imaging resolution for equal incoherent sources with unknown independent Gaussian jitter, with a finite independent calibration budget.
+
+## Start here
+
+- [Scientific entrypoint](science/model-and-results.md): optical model, notation, allowed resources, minimax risk and precise theorem.
+- [Physical interpretation](science/interpretation.md): variance confounding, temporary plateaus, closing and returning relative advantage, and calibration crossovers.
+- [Repository overview](README.md): headline result, reading routes, scope and reproduction.
+
+## Theorem and proof routes
+
+- [Quantum converse](science/quantum-converse.md): lower bound for every joint receiver; pure-state floor and nuisance-matched hard pair.
+- [Collision kernel](science/collision-kernel.md): squeezed thermal representation, inverse-quarter-root domain, exact non-Gaussian mixture collision calculation and uniform estimates.
+- [Four-outcome receiver](science/finite-receiver.md): Hermite–Gaussian probabilities, exact invariant, unbiased U-statistic, calibrated zero-mode difference, bounded-noise test and upper-bound selection.
+- [Direct imaging](science/direct-imaging.md): full position experiment, classical hard pair, fourth cumulant, calibrated variance difference and matching order.
+
+## Essential distinctions
+
+- q=s^2/(4u), where s is the full physical separation and u is the known point-spread intensity variance.
+- The point-spread amplitude itself is a known real Gaussian. Gaussian intensity alone is insufficient to specify this quantum model.
+- v is fixed but unknown; 0<=v/u<=b supplies only an upper bound. The b=0 case is exactly noiseless.
+- Every photon has a fresh independent jitter realization. Signal and calibration streams share a variance, not a realized translation.
+- A composite lower bound may compare different allowed nuisance values across the two hypotheses. Within each world, signal and calibration have the same variance.
+- N counts signal photons; M counts independent calibration photons. K=NM/(N+M), K=0 at M=0; L=max(sqrt(N),K).
+- R_Q=N^-1+min(b,sqrt(b/L)); R_DI=N^-1/2+min(b,L^-1/2). These are uniform matching orders for fixed error, not exact minimax constants.
+- The alternative is the entire separated range h<=q<=qmax. Upper guarantees require the sufficient threshold to fit below qmax.
+- The lower bound permits arbitrary collective quantum measurements. Four fixed outcomes are sufficient for attainment; outcome minimality is not proved.
+- A plateau is a range with unchanged asymptotic order. Absolute resolution does not worsen as photons are added. Closure of a parametric advantage does not assert identical constants.
+- Near N~b^-2, K~b^-1 is a crossover; K>>b^-1 is needed to resolve parametrically below the uncertainty scale.
+- The model excludes correlated motion, unknown centroid, non-Gaussian jitter, active probes and variance mismatch between the two streams.
+
+## Sources and reproducibility
+
+- [Related work](references/related-work.md): inherited facts, close comparisons, source revisions and limits of the literature review.
+- [Structured bibliography](references/references.bib): primary references and verified metadata.
+- [Verification guide](verification/README.md): commands, dependencies, committed expected outputs and what finite calculations establish.
+- [Runner](verification/run_all.py): execute the scientific numerical checks without rewriting reference outputs.
+- [Plot generator](verification/plot_regimes.py): regenerate the representative resolution-scale figure; it is not a numerical risk calculation.
+
+Use each topic page as the authoritative home of its proof. Do not infer a general noise model, exact constant, experimental validation or exhaustive novelty claim from the asymptotic diagram or finite checks.
