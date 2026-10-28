@@ -52,6 +52,12 @@ Start with the [model and complete claims](science/model-and-results.md), then f
 
 The [LLM reading guide](llms.txt) maps scientific questions to the authoritative pages.
 
+## Learn the project
+
+The single educational anchor is **Mankei Tsang, *Resolving starlight: a quantum perspective***, [arXiv:1906.02064v2](https://arxiv.org/pdf/1906.02064v2). The [Tsang bridge](learning/tsang-bridge.md) identifies the useful sections, translates the notation, and connects spatial-mode imaging to unknown jitter, charged calibration and the uniform testing theorem. It separates the review's foundations from the project's derivations and research-level proof dependencies.
+
+The [30-milestone map](learning/milestones.md) gives a common route through the science. Its **12 background/preliminaries milestones** assemble the optical and statistical experiment; its **18 narrative/innovation milestones** connect nuisance compensation, the universal converse, finite-receiver attainment and the calibration frontier. Each milestone records an understanding target, dependencies, a conceptual connection and source pointers. Use the bridge alongside the map for self-directed study; the direct proof route above remains available.
+
 ## Reproduce the checks
 
 With Python 3.11 or later, install the pinned numerical dependencies and run from the repository root:

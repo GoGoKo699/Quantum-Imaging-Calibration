@@ -16,6 +16,7 @@ The result is a uniform fixed-error resolution law. Its lower bound permits ever
 | What do the plateau and calibration crossovers mean? | [Physical interpretation](interpretation.md) |
 | Which ingredients are inherited and what has been compared? | [Related work](../references/related-work.md) |
 | Which finite calculations can be reproduced? | [Verification](../verification/README.md) |
+| How can I connect imaging foundations to the complete result? | [Tsang bridge](../learning/tsang-bridge.md) and [30 milestones](../learning/milestones.md) |
 
 ## 1. Optical experiment
 
