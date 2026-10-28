@@ -115,7 +115,7 @@ Its expectation is $`\theta`$. The corresponding degree-two U-statistic is
 
 ```math
 \widehat{\theta}
-=\frac{1}{\binom{N}{2}}\sum_{i<j}H(Y_i,Y_j)
+=\frac{2}{N(N-1)}\sum_{i=1}^{N-1}\sum_{j=i+1}^{N}H(Y_i,Y_j)
 =\frac{n_0n_2-\frac{3}{2}n_1(n_1-1)}{N(N-1)}.
 ```
 
