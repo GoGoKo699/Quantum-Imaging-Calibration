@@ -82,9 +82,9 @@ A quantum decision is an effect $`0\le T\le I`$ on all $`N+M`$ photons, with out
 \begin{aligned}
 \mathcal R_Q(h;N,M,b)
 =\inf_{0\le T\le I}\max\Big\{&
-\sup_{0\le v\le ub}\operatorname{Tr}(T\Omega_{0,v}),\\
+\sup_{0\le v\le ub}\mathrm{Tr}(T\Omega_{0,v}),\\
 &\sup_{\substack{h\le q\le q_{\max}\\0\le v\le ub}}
-\operatorname{Tr}[(I-T)\Omega_{q,v}]
+\mathrm{Tr}[(I-T)\Omega_{q,v}]
 \Big\}.
 \end{aligned}
 ```

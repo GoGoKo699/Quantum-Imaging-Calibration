@@ -138,9 +138,9 @@ H_1(Y)=\frac12p_2\mathbf1_0(Y)+\frac12p_0\mathbf1_2(Y)
 The exact variance identity is
 
 ```math
-\operatorname{Var}(\widehat\theta)
-=\frac{4(N-2)}{N(N-1)}\operatorname{Var}(H_1)
-+\frac{2}{N(N-1)}\operatorname{Var}(H).
+\mathrm{Var}(\widehat\theta)
+=\frac{4(N-2)}{N(N-1)}\mathrm{Var}(H_1)
++\frac{2}{N(N-1)}\mathrm{Var}(H).
 ```
 
 It includes the degenerate part and remains valid at $`N=2`$.
@@ -151,10 +151,10 @@ Put $`t=B+q`$. The probability formulas imply
 p_1\le\frac t4,\qquad p_2\le\frac{3t^2}{32}.
 ```
 
-Consequently $`\mathbb E H^2\le3t^2/16`$. Conditional Jensen gives $`\operatorname{Var}(H_1)\le\mathbb E H^2`$, and the variance identity yields the particularly simple bound
+Consequently $`\mathbb E H^2\le3t^2/16`$. Conditional Jensen gives $`\mathrm{Var}(H_1)\le\mathbb E H^2`$, and the variance identity yields the particularly simple bound
 
 ```math
-\boxed{\operatorname{Var}(\widehat\theta)
+\boxed{\mathrm{Var}(\widehat\theta)
 \le \frac{3(B+q)^2}{4N}.}
 ```
 
@@ -223,7 +223,7 @@ r(B,q)=1-p_0(B,q)
 One proof uses $`\Pr(Q\ge1)\le\mathbb E Q=(B+q)/4`$; alternatively it follows directly from the expression for $`p_0`$. Thus
 
 ```math
-\operatorname{Var}(\widehat r_{\rm s}-\widehat r_{\rm c})
+\mathrm{Var}(\widehat r_{\rm s}-\widehat r_{\rm c})
 \le\frac{b+q}{4N}+\frac b{4M}
 =\frac14\left(\frac bK+\frac qN\right).
 ```
