@@ -114,9 +114,9 @@ H(Y_i,Y_j)
 Its expectation is $`\theta`$. The corresponding degree-two U-statistic is
 
 ```math
-\widehat\theta
-=\binom N2^{-1}\sum_{i<j}H(Y_i,Y_j)
-=\frac{n_0n_2-\frac32n_1(n_1-1)}{N(N-1)}.
+\widehat{\theta}
+=\frac{2}{N(N-1)}\sum_{i=1}^{N-1}\sum_{j=i+1}^{N}H(Y_i,Y_j)
+=\frac{n_0n_2-\frac{3}{2}n_1(n_1-1)}{N(N-1)}.
 ```
 
 Here $`n_j`$ is the number of photons in category $`j`$. In particular, the term $`n_1(n_1-1)`$ removes the finite-sample bias that would be introduced by squaring an empirical probability.
