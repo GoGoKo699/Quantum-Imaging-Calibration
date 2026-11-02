@@ -1,17 +1,18 @@
 # Quantum Imaging Calibration
 
-> Uniform fixed-error quantum and direct-imaging resolution for equal incoherent sources with unknown independent Gaussian jitter, with a finite independent calibration budget.
+> Uniform fixed-error quantum and direct-imaging resolution for equal incoherent sources with unknown independent Gaussian jitter and a finite independent calibration budget; sister consequences when a common Brownian signal centroid also moves.
 
 ## Start here
 
 - [Scientific entrypoint](science/model-and-results.md): optical model, notation, allowed resources, minimax risk and precise theorem.
 - [Physical interpretation](science/interpretation.md): variance confounding, temporary plateaus, closing and returning relative advantage, and calibration crossovers.
-- [Repository overview](README.md): headline result, reading routes, scope and reproduction.
+- [Joint timing/calibration consequence](science/timing-and-calibration.md): self-contained moving-signal experiment, exact factor-two notation bridge, schedule-dependent frontier, calibration crossover and stable links to the full shared proof in Quantum-Imaging-Timing.
+- [Repository overview](README.md): headline result, prominent sister relationship, reading routes, scope and reproduction.
 
 ## Learning route
 
 - [30-milestone map](learning/milestones.md): the common project-defined route, exactly M01–M30, with 12 background/preliminaries and 18 narrative/innovation milestones. Each gives a central question, understanding target, dependencies, conceptual connection and scientific source pointers.
-- [Tsang bridge](learning/tsang-bridge.md): the sole educational anchor, Mankei Tsang's Resolving starlight: a quantum perspective, arXiv:1906.02064v2; useful source sections, notation translation, worked variance-matching example, and the steps from imaging foundations to the finite-calibration frontier.
+- [Tsang bridge](learning/tsang-bridge.md): the sole educational anchor, Mankei Tsang's Resolving starlight: a quantum perspective, arXiv:1906.02064v2; useful source sections, notation translation, worked variance-matching example, and the steps from imaging foundations to the finite-calibration frontier and its Brownian relative-mode extension. Both sister repositories retain this one educational source with distinct bridges.
 - For self-directed study, follow the bridge alongside the milestone dependencies. The map is defined by the project rather than by any reader's assessment history.
 - The review supplies imaging and measurement foundations. The exact finite-error tests, invariant and infinite-dimensional collision argument require the project proofs and their primary research dependencies. Those citations are not additional educational anchors.
 - In the review, theta denotes full separation, q is a mode label and Appendix C's M counts temporal modes. Here s=2a is full separation, q=a²/u is squared half-separation, and M counts calibration photons. The bridge also distinguishes the review's object moments from the project's quadratic statistic theta.
@@ -36,7 +37,10 @@
 - The lower bound permits arbitrary collective quantum measurements. Four fixed outcomes are sufficient for attainment; outcome minimality is not proved.
 - A plateau is a range with unchanged asymptotic order. Absolute resolution does not worsen as photons are added. Closure of a parametric advantage does not assert identical constants.
 - Near N~b^-2, K~b^-1 is a crossover; K>>b^-1 is needed to resolve parametrically below the uncertainty scale.
-- The model excludes correlated motion, unknown centroid, non-Gaussian jitter, active probes and variance mismatch between the two streams.
+- The static theorem excludes common motion and unknown centroid. The separate joint note covers a Brownian common path and unrestricted initial centroid on a known bounded schedule. Non-Gaussian jitter, active path probes, unknown diffusion and calibration variance mismatch remain outside the guarantees.
+- In the joint note q_t=q/2, w=B/2 and b_t=b/2; physical separation is s=2sqrt(2u q_t). Its r0 root and S2 gap sum define the general schedule frontier r0+min(b_t,sqrt(b_t/M),S2^-1/4); omit the calibration branch at M=0 and set the nuisance term to zero at b_t=0.
+- Calibration is a stabilized known-point source with independent jitter realizations. It learns a variance, not the signal Brownian path or any individual signal jitter.
+- The general joint receiver is a two-register relative-coordinate POVM with full HG index detection. Four categories suffice only for the static theorem and the stated close-doublet construction. Timing owns the full joint proof; Calibration owns the independent-jitter theorem and collision ingredients. Count the shared result once.
 
 ## Sources and reproducibility
 

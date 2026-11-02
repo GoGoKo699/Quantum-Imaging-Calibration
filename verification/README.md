@@ -11,7 +11,7 @@ python3 -m pip install -r verification/requirements.txt
 python3 verification/run_all.py
 ```
 
-The [requirements](requirements.txt) pin NumPy 2.3.5, SciPy 1.17.0 and Matplotlib 3.10.8. Matplotlib is used only to reproduce the figure. The runner executes all three calculation scripts, compares their results with committed reference data, and exits unsuccessfully if a check fails. The default command does not rewrite the references. Floating-point comparisons use the tolerances described below; byte-for-byte output equality across numerical-library builds is not required.
+The [requirements](requirements.txt) pin NumPy 2.3.5, SciPy 1.17.0 and Matplotlib 3.10.8. Matplotlib is used only to reproduce the figure. The runner executes all four calculation scripts, compares their results with committed reference data, and exits unsuccessfully if a check fails. The default command does not rewrite the references. Floating-point comparisons use the tolerances described below; byte-for-byte output equality across numerical-library builds is not required.
 
 ## Check inventory
 
@@ -20,6 +20,7 @@ The [requirements](requirements.txt) pin NumPy 2.3.5, SciPy 1.17.0 and Matplotli
 | [check_collision.py](check_collision.py) | Weighted oscillator coefficients, Gauss–Hermite integration of state matrices, explicit small tensor products and pure-amplitude overlaps | Checks the exact quantum kernel, signal/calibration collision identities, tensorization and fidelity normalization |
 | [check_receiver.py](check_receiver.py) | Gaussian quadrature of conditional HG probabilities and exhaustive enumeration of four-category multinomial count records | Checks the finite-mode probabilities, invariant, unbiased count statistic and full U-statistic variance |
 | [check_direct_imaging.py](check_direct_imaging.py) | Direct integration of classical collision densities, high-precision endpoint coefficients, Gaussian-mixture moments and kernel squares | Checks the classical hard pair, fourth cumulant, variance calculations and endpoint reductions |
+| [check_joint_bridge.py](check_joint_bridge.py) | Gaussian integration in physical coordinates, unit conversion, numerical timing-root inversion and close-doublet resource examples | Checks the stationary point-calibration source, exact factor-two notation mapping, close-doublet reduction and persistence of physical jitter |
 
 The collision suite has 18 kernel comparisons, 20 signal and 20 calibration collision cases, two explicit tensor-product checks, and three pure-overlap checks. It includes very weak jitter, different optical widths, a high-jitter convergence case, identical states and an alternative with zero jitter. The reference used for every inverse operator remains faithful. The [collision verification note](collision-verification.md) explains the basis sizes, quadrature rules and separate zero-case tolerance.
 
@@ -27,7 +28,9 @@ The receiver suite uses 20 pairs of variance and separation parameters and 60 co
 
 ## Results and tolerances
 
-The committed references are [quantum collision](expected/check_collision.json), [finite receiver](expected/check_receiver.json) and [direct imaging](expected/check_direct_imaging.json). They retain computed quantities for every case, rather than only a pass/fail flag.
+The committed references are [quantum collision](expected/check_collision.json), [finite receiver](expected/check_receiver.json), [direct imaging](expected/check_direct_imaging.json) and [joint bridge](expected/check_joint_bridge.json). They retain computed quantities for every case, rather than only a pass/fail flag.
+
+The bridge checks 12 separation-normalization cases, 12 stationary point-calibration moment cases, 48 close-doublet budget cases and 12 physical-jitter examples. It uses the calibration source specified in [Timing and calibration](../science/timing-and-calibration.md): its photons have the same unknown independent jitter variance, with a known fixed center and no signal Brownian motion. Exact knowledge of that variance leaves a nonzero SWAP background whenever the physical jitter is positive. The numerical branch comparisons check order equivalence on their listed inputs, not exact minimax constants or a proof of the arbitrary-schedule law. The joint correlated-state proof and its heterogeneous receiver checks have their authoritative home in the [Timing sister](https://github.com/GoGoKo699/Quantum-Imaging-Timing).
 
 The recorded run found these discrepancies between independent calculations:
 
