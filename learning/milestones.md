@@ -2,9 +2,9 @@
 
 [Repository overview](../README.md) · [Tsang-to-project bridge](tsang-bridge.md) · [Scientific model](../science/model-and-results.md)
 
-This map connects the optical experiment to its uniform resolution frontier. It has **12 background/preliminaries milestones (M01–M12)** and **18 narrative/innovation milestones (M13–M30)**. The background phase builds from one optical amplitude to the full statistical experiment; the narrative phase builds from the confounding mechanism to matching limits, an attaining receiver, and their physical meaning. The allocation reflects the project's combination of optics, quantum discrimination and nuisance statistics.
+This map connects the optical experiment to its uniform resolution frontier. It has **12 background/preliminaries milestones (M01–M12)** and **18 narrative/innovation milestones (M13–M30)**. The background phase builds from one optical amplitude to the full statistical experiment; the narrative phase builds from the confounding mechanism to matching limits, an attaining receiver, and their physical meaning, then the calibration consequences for a common moving signal. The allocation reflects the project's combination of optics, quantum discrimination and nuisance statistics.
 
-The single educational anchor is Mankei Tsang, [*Resolving starlight: a quantum perspective*, arXiv:1906.02064v2](https://arxiv.org/pdf/1906.02064v2). Section references below refer to that version. The anchor provides the imaging foundations; the linked project pages supply the unknown-jitter, finite-calibration proofs. Primary research references in those pages retain their separate role as proof dependencies and attribution.
+The single educational anchor is Mankei Tsang, [*Resolving starlight: a quantum perspective*, arXiv:1906.02064v2](https://arxiv.org/pdf/1906.02064v2). Section references below refer to that version. The anchor provides the imaging foundations; the linked project pages supply the unknown-jitter, finite-calibration proofs and the joint timing/calibration transfer. Timing owns the shared full proof, while this map retains Calibration's independent result and its consequences. Primary research references in those pages retain their separate role as proof dependencies and attribution.
 
 The targets are shared understanding goals for any reader. They describe the project as a connected whole, without attempting to cover every calculation. The [model and results](../science/model-and-results.md) remain the authoritative statements; the [verification guide](../verification/README.md) separates reproducible finite checks from analytical proofs.
 
@@ -34,7 +34,7 @@ The targets are shared understanding goals for any reader. They describe the pro
 ### M03 — Photon counts are charged observations
 
 - **Central question:** What information is supplied by collecting more photons?
-- **Understanding target:** Explain independent repetitions, the roles of signal count $`N`$ and calibration count $`M`$, and the distinction between conditioned counts and a parameter-dependent count side channel.
+- **Understanding target:** Explain independent repetitions, the roles of signal count $`N`$ and calibration count $`M`$, and the distinction between conditioned counts and a parameter-dependent count side channel. In the joint model, distinguish the independent stabilized calibration stream from the correlated signal stream.
 - **Dependencies and story role:** M02; turns the one-photon object into the experiment's resource model.
 - **Conceptual connection:** More observations reduce statistical uncertainty, but collecting calibration photons is an additional charged resource. The review's mean Poisson count is translated here into fixed or conditioned detected counts.
 - **Sources:** Tsang I, V and Appendix C; [joint input state and count assumptions](../science/model-and-results.md#1-optical-experiment).
@@ -68,7 +68,7 @@ The targets are shared understanding goals for any reader. They describe the pro
 - **Central question:** What is unknown when every photon undergoes fresh Gaussian jitter?
 - **Understanding target:** Distinguish the fixed unknown variance $`v`$ from each independently redrawn translation, and distinguish the supplied bound $`b`$ from the actual normalized variance $`B=v/u`$.
 - **Dependencies and story role:** M02–M03 and M06; places the extra broadening inside the optical model.
-- **Conceptual connection:** Calibration learns a shared distributional parameter. It does not reveal the signal photons' realized translations; a common displacement or an unknown centroid is a different experiment.
+- **Conceptual connection:** Calibration learns a shared distributional parameter. It does not reveal the signal photons' realized translations; a common displacement or an unknown centroid is a different experiment. The sister result supplies a specific Brownian common-motion model and relative-register access rather than silently reinterpreting independent jitter.
 - **Sources:** Tsang VIII.A and VIII.I as related physical context; [optical experiment](../science/model-and-results.md#1-optical-experiment), [scope](../science/quantum-converse.md#7-endpoints-and-scope).
 
 ### M08 — A calibrated difference needs both samples
@@ -106,7 +106,7 @@ The targets are shared understanding goals for any reader. They describe the pro
 ### M12 — Assemble the complete experiment
 
 - **Central question:** Which information, resources and success criterion define the theorem?
-- **Understanding target:** Specify the known real Gaussian amplitude, centroid and axis; equal incoherent sources; fresh Gaussian jitter; independent matched calibration; counts; receiver classes; and fixed-error risk in one account.
+- **Understanding target:** Specify the static theorem's known real Gaussian amplitude, centroid and axis; equal incoherent sources; fresh Gaussian jitter; independent matched calibration; counts; receiver classes; and fixed-error risk. Identify the additional Brownian-law and receiver assumptions needed for its joint extension.
 - **Dependencies and story role:** M01–M11; integrates the background phase before the proof narrative begins.
 - **Conceptual connection:** The dimensionless parameter $`q=s^2/(4u)`$, the bound $`0\le B\le b`$, and both photon budgets must remain attached to every resolution claim.
 - **Sources:** Tsang II–V and VIII.K as the anchor route; [complete model and task](../science/model-and-results.md#1-optical-experiment), [uniform theorem](../science/model-and-results.md#3-uniform-resolution-theorem).
@@ -132,7 +132,7 @@ The targets are shared understanding goals for any reader. They describe the pro
 ### M15 — A faithful reference still needs a domain argument
 
 - **Central question:** Why is a formal Gaussian inverse insufficient in an infinite-dimensional proof?
-- **Understanding target:** Distinguish faithfulness from a bounded inverse, and explain the role of the weighted vectors $`\tau_v^{-1/4}|\psi_x\rangle`$ and their trace-class mixture for $`v>0`$.
+- **Understanding target:** Distinguish faithfulness from a bounded inverse, and explain the role of the weighted vectors $`\tau_v^{-1/4}|\psi_x\rangle`$ and their trace-class mixture for $`v\gt 0`$.
 - **Dependencies and story role:** M01, M10 and M13; identifies the mathematical foundation required before using collision distances.
 - **Conceptual connection:** The squeezed thermal decomposition and integrability argument make the weighted comparison legitimate. The pure endpoint retains its separate argument from M14.
 - **Sources:** Tsang Appendix B for state/measurement context; project-supplied [thermal decomposition](../science/collision-kernel.md#2-squeezed-thermal-decomposition), [inverse-quarter-root domain](../science/collision-kernel.md#3-domain-of-the-inverse-quarter-root) and [trace-class construction](../science/collision-kernel.md#4-weighted-gaussian-mixtures-are-trace-class).
@@ -236,23 +236,23 @@ The targets are shared understanding goals for any reader. They describe the pro
 ### M28 — Charge the calibration that changes a regime
 
 - **Central question:** How much calibration is needed for a parametrically smaller resolution?
-- **Understanding target:** Compare calibration with both shape information and the known variance band; distinguish crossover counts from strict improvements, finite $`M`$ from $`M\asymp N`$, and saturation when $`M\gg N`$.
-- **Dependencies and story role:** M08, M22 and M27; connects the resource theorem to experimental budgeting.
-- **Conceptual connection:** Useful parametric improvement requires the relevant $`K\gg\sqrt N`$ and $`K\gg b^{-1}`$ comparisons when the noiseless floor does not dominate. A finite calibration budget is not a permanent resolution floor because signal shape information continues improving.
-- **Sources:** Tsang I and V for photon-resource context; [calibration regimes](../science/interpretation.md#how-much-calibration-is-useful), [closing-boundary example](../science/interpretation.md#a-scaling-example-at-the-closing-advantage-boundary).
+- **Understanding target:** Compare calibration with both shape information and the known variance band; distinguish crossover counts from strict improvements, finite $`M`$ from $`M\asymp N`$, and saturation when $`M\gg N`$. Explain why the joint schedule can alter the count needed to reach its physical floor.
+- **Dependencies and story role:** M08, M22 and M27; connects the resource theorem to experimental budgeting and its moving-signal consequence.
+- **Conceptual connection:** In the static and close-doublet regimes, useful parametric improvement needs the relevant $`K\gg\sqrt N`$ and $`K\gg b^{-1}`$ comparisons. For the general joint model use its own normalization and compare calibration against the schedule-dependent uncertainty term; learning variance never removes individual displacements.
+- **Sources:** Tsang I and V for photon-resource context; [calibration regimes](../science/interpretation.md#how-much-calibration-is-useful), [closing-boundary example](../science/interpretation.md#a-scaling-example-at-the-closing-advantage-boundary), [joint calibration crossover](../science/timing-and-calibration.md#4-close-doublets-calibration-changes-uncertainty-not-physical-jitter).
 
-### M29 — Separate the contribution, evidence and boundaries
+### M29 — Transfer calibration to a moving signal without changing the experiment
 
-- **Central question:** Which part is established by this project, and which ingredients or comparisons remain external?
-- **Understanding target:** Credit inherited mode, moment, mixture and discrimination methods; identify the combined uniform frontier; distinguish analytical proof, deterministic finite checks, engineering assumptions and unresolved full-text comparisons.
-- **Dependencies and story role:** M18, M24, M26 and M28; evaluates the complete scientific account before its final synthesis.
-- **Conceptual connection:** Numerical agreement supports checked identities, not infinite-dimensional uniformity or priority. Known centroid, real Gaussian amplitude, independent jitter and matched calibration are consequential hypotheses.
-- **Sources:** Tsang VIII.A for an adjacent model boundary; [attribution and scope](../science/model-and-results.md#5-attribution-and-scope), [related-work access limits](../references/related-work.md#7-access-limitations-and-the-scope-of-the-comparison), [verification scope](../verification/README.md#what-remains-analytical).
+- **Central question:** Which parts of the calibration theorem survive common Brownian motion, and what needs a new construction?
+- **Understanding target:** Translate $`q_t=q/2`$ and $`b_t=b/2`$; specify the stabilized independent point calibration source; explain the covariance-extraction converse and centroid-free relative-mode receiver; distinguish its full HG index from the four-category static apparatus.
+- **Dependencies and story role:** M07–M08, M12, M16–M18, M24 and M28; joins the independent-jitter account to the sister timing result while retaining the load-bearing differences.
+- **Conceptual connection:** A Brownian translation channel transfers an obstruction but not a known-centroid receiver. Pair-relative source displacements form a three-point mixture. Corrected heterogeneous moments and an independently proved variance bound yield the joint order $`r_0+\min\{b_t,\sqrt{b_t/M},S_2^{-1/4}\}`$; neither a multiplied rate nor perfect calibration is a path monitor.
+- **Sources:** Tsang VI.G, VII.A–B and VIII.A for foundations; [joint experiment and notation](../science/timing-and-calibration.md#1-two-motions-and-one-fully-specified-calibration-source), [joint frontier](../science/timing-and-calibration.md#2-the-bounded-schedule-frontier), [proof transfer](../science/timing-and-calibration.md#3-why-the-two-proof-mechanisms-compose), [scope and attribution](../science/timing-and-calibration.md#5-attribution-independence-and-limits).
 
 ### M30 — Reconstruct the resolution frontier as one story
 
-- **Central question:** Why do these assumptions, resources and measurements lead to these two resolution laws?
-- **Understanding target:** Explain the complete path from width confounding through a universal hard-pair bound and finite receiver to the direct-imaging comparison, temporary plateau and calibration-dependent recovery of advantage.
-- **Dependencies and story role:** M12, M18, M24 and M26–M29; integrates the narrative phase and the project as a whole.
-- **Conceptual connection:** Keep $`q=s^2/(4u)`$ distinct from physical separation, take square roots when translating exponents, and state matching uniform orders with fixed-error and nonempty-alternative qualifications. The result is an operational frontier within the specified experiment.
-- **Sources:** Tsang II–V, VII and VIII.J–K as the educational foundation; [complete theorem](../science/model-and-results.md#3-uniform-resolution-theorem), [physical interpretation](../science/interpretation.md), [scope](../science/model-and-results.md#5-attribution-and-scope).
+- **Central question:** Why do these assumptions, resources and measurements lead to the static and moving-signal resolution laws?
+- **Understanding target:** Explain the path from width confounding through a universal hard-pair bound and attaining receiver to the position-detection comparison, uncertainty plateau and calibration crossover. Relate that account to the joint timing theorem and its surviving physical-jitter floor.
+- **Dependencies and story role:** M12, M18, M24 and M26–M29; integrates the narrative phase and both the independent theorem and its sister consequence.
+- **Conceptual connection:** Keep $`q=s^2/(4u)`$, $`q_t=q/2`$ and physical separation distinct. State uniform fixed-error orders, nonempty-alternative conditions and actual apparatus assumptions. Credit the shared theorem once, distinguish analytic proof from finite checks, and retain unresolved literature and hardware limits.
+- **Sources:** Tsang II–V, VI.G, VII and VIII.J–K as the one educational foundation; [static theorem](../science/model-and-results.md#3-uniform-resolution-theorem), [physical interpretation](../science/interpretation.md), [joint timing/calibration consequence](../science/timing-and-calibration.md), [related-work access limits](../references/related-work.md#7-access-limitations-and-the-scope-of-the-comparison), [verification scope](../verification/README.md#what-remains-analytical).

@@ -4,11 +4,14 @@ Two nearby incoherent point sources and one randomly wandering point source can 
 
 The result is a uniform fixed-error resolution law. Its lower bound permits every joint quantum receiver; its upper bound uses one fixed four-outcome spatial measurement. A matching direct-imaging law exposes an intermediate regime in which uncertainty in the noise removes the scaling advantage of quantum detection. The [interpretation](interpretation.md) explains that regime and the calibration budget needed to leave it.
 
+The sister [Quantum Imaging Timing](https://github.com/GoGoKo699/Quantum-Imaging-Timing) supplies the common-motion and arrival-schedule part of a separate [joint timing/calibration result](timing-and-calibration.md). This page remains the complete theorem for the independent-jitter known-centroid experiment; the joint note states its additional assumptions, notation and proof route.
+
 ## Reading route
 
 | Question | Authoritative account |
 |---|---|
 | What is observed, what is unknown, and what is claimed? | This page |
+| How does this change when the signal centroid follows a known-law Brownian path? | [Joint timing/calibration consequence](timing-and-calibration.md) |
 | Why can no quantum receiver beat the stated order? | [Quantum converse](quantum-converse.md) |
 | How is the infinite-dimensional collision calculation justified? | [Collision kernel](collision-kernel.md) |
 | Which finite apparatus and tests attain the quantum order? | [Four-outcome receiver](finite-receiver.md) |
@@ -24,7 +27,7 @@ The known point-spread amplitude is real and transform limited:
 
 ```math
 \psi_x(y)=(2\pi u)^{-1/4}
-\exp\!\left[-\frac{(y-x)^2}{4u}\right],\qquad u>0.
+\exp\!\left[-\frac{(y-x)^2}{4u}\right],\qquad u\gt 0.
 ```
 
 The intensity of a point source has variance $`u`$. Specifying its intensity alone would leave an unknown amplitude phase and would not define the quantum model used below. The source centroid and separation axis are known. Two equally bright, mutually incoherent point sources are located at $`-a`$ and $`+a`$, where $`a\ge0`$. Their physical separation is $`s=2a`$.
@@ -67,7 +70,7 @@ Write the dimensionless squared half-separation as
 q=\frac{a^2}{u}=\frac{s^2}{4u}.
 ```
 
-Fix an error tolerance $`\epsilon\in(0,1/2)`$ and a finite local range $`0<q_{\max}\le1`$. For a proposed resolution $`h\in(0,q_{\max}]`$, test
+Fix an error tolerance $`\epsilon\in(0,1/2)`$ and a finite local range $`0\lt q_{\max}\le1`$. For a proposed resolution $`h\in(0,q_{\max}]`$, test
 
 ```math
 H_0:q=0,\ 0\le v\le ub,
@@ -111,7 +114,7 @@ K=\frac{NM}{N+M},\qquad K=0\ \text{when }M=0,
 
 The harmonic count arises because a calibrated difference must learn from both samples. Its occurrence is an inherited two-sample statistical mechanism, rather than a separate novelty claim; see [attribution](../references/related-work.md).
 
-**Theorem.** Fix $`\epsilon\in(0,1/2)`$, $`0\le b_{\max}<\infty`$ and $`q_{\max}\in(0,1]`$. There are constants $`0<c<C<\infty`$ and $`N_0\ge2`$, depending only on these fixed quantities, with the following properties for every integer $`N\ge N_0`$, every integer $`M\ge0`$, every $`b\in[0,b_{\max}]`$ and every $`u>0`$. Let
+**Theorem.** Fix $`\epsilon\in(0,1/2)`$, $`0\le b_{\max}\lt \infty`$ and $`q_{\max}\in(0,1]`$. There are constants $`0\lt c\lt C\lt \infty`$ and $`N_0\ge2`$, depending only on these fixed quantities, with the following properties for every integer $`N\ge N_0`$, every integer $`M\ge0`$, every $`b\in[0,b_{\max}]`$ and every $`u\gt 0`$. Let
 
 ```math
 \boxed{
@@ -129,7 +132,7 @@ R_{\mathrm{DI}}(N,M,b)=\frac1{\sqrt N}+
 
 For either measurement class $`A\in\{Q,\mathrm{DI}\}`$:
 
-1. If $`0<h\le cR_A`$, then $`\mathcal R_A(h;N,M,b)>\epsilon`$.
+1. If $`0\lt h\le cR_A`$, then $`\mathcal R_A(h;N,M,b)\gt \epsilon`$.
 2. If $`CR_A\le h\le q_{\max}`$, then $`\mathcal R_A(h;N,M,b)\le\epsilon`$.
 
 The upper statement is asserted only when its interval is nonempty. The choice of $`N_0`$ makes the small hard alternatives in the lower proof lie within $`q_{\max}`$ uniformly in $`M,b`$. These are matching orders with uniform multiplicative constants, not exact leading minimax constants. In physical separation, the corresponding orders are $`s_Q\asymp\sqrt{uR_Q}`$ and $`s_{\mathrm{DI}}\asymp\sqrt{uR_{\mathrm{DI}}}`$; the conversion itself is exactly $`s=2\sqrt{uq}`$.
@@ -155,14 +158,14 @@ For this pair, the [exact collision identity](collision-kernel.md) controls the 
 K\frac{q^2}{b}+N\frac{q^4}{b^2}.
 ```
 
-This expression is used only for $`b>0`$ and for a chosen interior null variance proportional to $`ub`$. The allowed nuisance interval also requires $`q\lesssim b`$. Together these restrictions give $`\min\{b,\sqrt{b/L}\}`$. The proof works at fixed nonzero error and therefore does not infer a testing law solely from a singular Fisher information matrix.
+This expression is used only for $`b\gt 0`$ and for a chosen interior null variance proportional to $`ub`$. The allowed nuisance interval also requires $`q\lesssim b`$. Together these restrictions give $`\min\{b,\sqrt{b/L}\}`$. The proof works at fixed nonzero error and therefore does not infer a testing law solely from a singular Fisher information matrix.
 
 The [attaining apparatus](finite-receiver.md) resolves Hermite–Gaussian modes $`0,1,2`$ of the known point-spread amplitude and groups all higher modes into one fourth outcome. Its basis is independent of the unknown variance. Three classical tests can be formed from the same type of record:
 
 | Information used | Sufficient quantum threshold in $`q`$, up to constants |
 |---|---|
 | The known upper bound on the jitter variance | $`b+N^{-1}`$ |
-| A difference of calibration and signal zero-mode frequencies | $`N^{-1}+\sqrt{b/K}`$, when $`M>0`$ |
+| A difference of calibration and signal zero-mode frequencies | $`N^{-1}+\sqrt{b/K}`$, when $`M\gt 0`$ |
 | An exact quadratic invariant of modes $`0,1,2`$ | $`N^{-1/2}+\sqrt b\,N^{-1/4}`$ |
 
 Select the test with the smallest certified threshold using the known budgets and noise bound. This choice uses no estimate of the true variance. The minimum is comparable to $`R_Q`$ uniformly, including $`b=0`$ and $`M=0`$.
@@ -173,6 +176,6 @@ The direct-imaging proof follows the same nuisance comparison with the optical i
 
 Gaussian-mixture weak identifiability and the uncalibrated $`N^{-1/8}`$ physical-separation exponent are established statistical phenomena. Quantum moment estimation, Hermite–Gaussian mode probabilities, noisy-imaging penalties, collision-divergence methods and minimax testing are also established tools. The contribution developed here is their explicit uniform resolution frontier for the stated experiment, with an exact all-receiver converse, an attaining four-outcome measurement, and the resulting calibration-dependent plateau. [Related work](../references/related-work.md) distinguishes those ingredients and records the limits of the source comparison.
 
-The theorem assumes a known real Gaussian point-spread amplitude, a known centroid and axis, equal incoherent source brightness, Gaussian jitter redrawn independently per photon, and identical signal/calibration jitter variances. It does not establish the same law for arbitrary unknown point-spread functions, unknown centroid, correlated motion, non-Gaussian jitter, imperfect calibration transfer or imperfect mode detection. These changes alter either the input experiment or the attaining measurement and require their own analysis.
+The theorem assumes a known real Gaussian point-spread amplitude, a known centroid and axis, equal incoherent source brightness, Gaussian jitter redrawn independently per photon, and identical signal/calibration jitter variances. It does not by itself establish the same law for arbitrary unknown point-spread functions, unknown centroid, correlated motion, non-Gaussian jitter, imperfect calibration transfer or imperfect mode detection. The separate [joint theorem](timing-and-calibration.md) treats a known-law common Brownian path and unrestricted initial centroid by a relative-mode construction, with a fully specified stabilized calibration source. It has its own schedule-dependent frontier and receiver assumptions; the other changes remain outside these guarantees.
 
 Proceed to the [quantum converse](quantum-converse.md) for the fundamental limit or the [finite receiver](finite-receiver.md) for the attaining construction.

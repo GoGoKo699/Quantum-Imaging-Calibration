@@ -7,7 +7,7 @@ This page proves the upper bound in [the model and main results](model-and-resul
 Use the real Gaussian amplitude
 
 ```math
-\psi_x(y)=(2\pi u)^{-1/4}\exp[-(y-x)^2/(4u)],\qquad u>0.
+\psi_x(y)=(2\pi u)^{-1/4}\exp[-(y-x)^2/(4u)],\qquad u\gt 0.
 ```
 
 A signal photon has latent displacement $`X=Z+Sa`$, where $`Z\sim\mathcal N(0,v)`$ and $`S=\pm1`$ is an independent fair sign. A calibration photon has displacement $`Z`$. Displacements are independently redrawn for every photon, while the unknown variance is common to both streams. Write
@@ -17,7 +17,7 @@ q=\frac{a^2}{u},\qquad B=\frac vu,\qquad
 0\le B\le b\le b_{\max},\qquad 0\le q\le q_{\max}\le1.
 ```
 
-The constants $`b_{\max}<\infty`$, $`q_{\max}>0`$, and error tolerance $`\epsilon\in(0,1/2)`$ are fixed. There are $`N\ge2`$ signal photons and $`M\ge0`$ calibration photons. The null is $`q=0`$; the separated alternative is $`h\le q\le q_{\max}`$, with the same allowed nuisance class in each hypothesis.
+The constants $`b_{\max}\lt \infty`$, $`q_{\max}\gt 0`$, and error tolerance $`\epsilon\in(0,1/2)`$ are fixed. There are $`N\ge2`$ signal photons and $`M\ge0`$ calibration photons. The null is $`q=0`$; the separated alternative is $`h\le q\le q_{\max}`$, with the same allowed nuisance class in each hypothesis.
 
 Define
 
@@ -94,7 +94,7 @@ p_{\min}=(1+b_{\max}/2)^{-1/2}e^{-q_{\max}/4},
 Throughout the parameter domain,
 
 ```math
-p_0\ge p_{\min}>0,\qquad
+p_0\ge p_{\min}\gt 0,\qquad
 \kappa q^2\le-\theta\le\frac{q^2}{16}.
 ```
 
@@ -163,7 +163,7 @@ No Gaussian approximation to the count distribution is involved.
 Decide for two sources when
 
 ```math
-\widehat\theta<-\frac{\kappa h^2}{2}.
+\widehat\theta\lt -\frac{\kappa h^2}{2}.
 ```
 
 Under the null, Chebyshev's inequality gives
@@ -228,7 +228,7 @@ One proof uses $`\Pr(Q\ge1)\le\mathbb E Q=(B+q)/4`$; alternatively it follows di
 =\frac14\left(\frac bK+\frac qN\right).
 ```
 
-Decide for two sources when $`\widehat r_{\rm s}-\widehat r_{\rm c}>\beta h/2`$. The type-I error is at most $`b/(\beta^2Kh^2)`$. The type-II error, uniformly for $`q\ge h`$, is at most
+Decide for two sources when $`\widehat r_{\rm s}-\widehat r_{\rm c}\gt \beta h/2`$. The type-I error is at most $`b/(\beta^2Kh^2)`$. The type-II error, uniformly for $`q\ge h`$, is at most
 
 ```math
 \frac1{\beta^2}\left(\frac b{Kh^2}+\frac1{Nh}\right).
@@ -258,7 +258,7 @@ Under the alternative,
 r(B,q)\ge\Delta(B,q)\ge\beta q.
 ```
 
-Use the signal excitation frequency alone and decide for two sources if $`\widehat r_{\rm s}>\beta h/2`$.
+Use the signal excitation frequency alone and decide for two sources if $`\widehat r_{\rm s}\gt \beta h/2`$.
 
 If $`h\ge b/\beta`$, the threshold exceeds every null mean by at least $`\beta h/4`$. Chebyshev therefore bounds the type-I error by
 

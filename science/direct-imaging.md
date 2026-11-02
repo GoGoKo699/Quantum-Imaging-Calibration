@@ -15,7 +15,7 @@ p_{q,B}(y)
 where $`\phi_s`$ denotes the centered Gaussian density of variance $`s`$,
 $`q=a^2/u`$, and $`B=v/u`$. A calibration observation has density $`\phi_{1+B}`$. All observations are independent. Within each hypothesis, the signal and calibration streams have the same unknown $`B`$.
 
-Fix $`0<q_{\max}\le1`$, $`b_{\max}<\infty`$, and $`\epsilon\in(0,1/2)`$. The nuisance class is $`0\le B\le b\le b_{\max}`$. Test $`q=0`$ against $`h\le q\le q_{\max}`$. The risk is the maximum of the worst-case type-I and type-II errors, as in the main model.
+Fix $`0\lt q_{\max}\le1`$, $`b_{\max}\lt \infty`$, and $`\epsilon\in(0,1/2)`$. The nuisance class is $`0\le B\le b\le b_{\max}`$. Test $`q=0`$ against $`h\le q\le q_{\max}`$. The risk is the maximum of the worst-case type-I and type-II errors, as in the main model.
 
 For $`N`$ signal observations and $`M`$ calibration observations, set
 
@@ -32,9 +32,9 @@ R_{\rm DI}(N,M,b)
 }
 ```
 
-There are constants $`0<c<C<\infty`$ and $`N_0`$, depending only on the fixed quantities above, such that:
+There are constants $`0\lt c\lt C\lt \infty`$ and $`N_0`$, depending only on the fixed quantities above, such that:
 
-- If $`N\ge N_0`$ and $`0<h\le cR_{\rm DI}`$, every direct-imaging test has risk strictly greater than $`\epsilon`$.
+- If $`N\ge N_0`$ and $`0\lt h\le cR_{\rm DI}`$, every direct-imaging test has risk strictly greater than $`\epsilon`$.
 - If $`N\ge N_0`$ and $`CR_{\rm DI}\le h\le q_{\max}`$, an explicit test has risk at most $`\epsilon`$.
 
 The upper statement is subject to $`CR_{\rm DI}\le q_{\max}`$, so its alternative is nonempty. The lower construction also lies in the specified local parameter domain once $`N\ge N_0`$.
@@ -105,7 +105,7 @@ The U-statistic variance identity, including its order-$`N^{-2}`$ term, gives
 \qquad V_4=552T_{\max}^4.
 ```
 
-Decide for two sources if $`\widehat C_4<-h^2`$. Under the null the mean is zero. For every alternative $`q\ge h`$, the distance from the mean to the threshold is at least $`q^2`$. Chebyshev therefore bounds either error by $`V_4/(Nh^4)`$. It suffices that
+Decide for two sources if $`\widehat C_4\lt -h^2`$. Under the null the mean is zero. For every alternative $`q\ge h`$, the distance from the mean to the threshold is at least $`q^2`$. Chebyshev therefore bounds either error by $`V_4/(Nh^4)`$. It suffices that
 
 ```math
 h\ge A_4N^{-1/4},\qquad A_4=(V_4/\epsilon)^{1/4}.
@@ -128,7 +128,7 @@ Its expectation is $`q`$, and its variance is at most
 =\frac{2T_{\max}^2}{K}.
 ```
 
-Decide for two sources if $`\widehat D_2>h/2`$. Both errors are at most $`8T_{\max}^2/(Kh^2)`$, uniformly over $`q\ge h`$. Thus
+Decide for two sources if $`\widehat D_2\gt h/2`$. Both errors are at most $`8T_{\max}^2/(Kh^2)`$, uniformly over $`q\ge h`$. Thus
 
 ```math
 h\ge A_2K^{-1/2},\qquad
@@ -141,7 +141,7 @@ suffices. This branch is disabled when $`M=0`$.
 
 Use $`\widehat S_2=N^{-1}\sum_iY_i^2`$. Under the null its mean is at most $`1+b`$; under the alternative its mean is at least $`1+q`$.
 
-Decide for two sources if $`\widehat S_2>1+h/2`$. When $`h\ge4b`$, the threshold exceeds every null mean by at least $`h/4`$. The type-I error is at most $`32T_{\max}^2/(Nh^2)`$. Under every alternative the distance from the mean to the threshold is at least $`q/2`$, giving type-II error at most $`8T_{\max}^2/(Nq^2)`$. It follows that
+Decide for two sources if $`\widehat S_2\gt 1+h/2`$. When $`h\ge4b`$, the threshold exceeds every null mean by at least $`h/4`$. The type-I error is at most $`32T_{\max}^2/(Nh^2)`$. Under every alternative the distance from the mean to the threshold is at least $`q/2`$, giving type-II error at most $`8T_{\max}^2/(Nq^2)`$. It follows that
 
 ```math
 h\ge A_{\rm bound}(b+N^{-1/2}),\qquad
@@ -207,7 +207,7 @@ If $`\log[1+\chi^2(P_1\Vert P_0)]\le\zeta_\epsilon`$, then
 ```math
 \mathrm{TV}(P_0,P_1)\le\frac{1-2\epsilon}{2},
 \qquad
-\max(\text{two errors})\ge\frac{1+2\epsilon}{4}>\epsilon.
+\max(\text{two errors})\ge\frac{1+2\epsilon}{4}\gt \epsilon.
 ```
 
 All lower constructions below meet this common margin.
@@ -247,14 +247,14 @@ Choose
 
 ```math
 q_0=c_0N^{-1/2},\qquad
-0<c_0\le\min\{1,\sqrt{2\zeta_\epsilon}\}.
+0\lt c_0\le\min\{1,\sqrt{2\zeta_\epsilon}\}.
 ```
 
 Then the strict testing margin above applies. Once $`q_0\le q_{\max}`$, this proves the $`N^{-1/2}`$ lower branch, for every calibration budget and every nuisance bound, including $`b=0`$.
 
 ## 5. Exact collision identity for the matched-nuisance pair
 
-Assume $`b>0`$. Set
+Assume $`b\gt 0`$. Set
 
 ```math
 B_0=b/2,\qquad
@@ -272,7 +272,7 @@ Let
 s_0=1+B_0,\qquad s_1=s_0-wq,\qquad t=q/s_0.
 ```
 
-When $`|wt|<1`$, the exact one-observation collision integrals are
+When $`|wt|\lt 1`$, the exact one-observation collision integrals are
 
 ```math
 C_{\rm s}(t,w)
@@ -360,7 +360,7 @@ Let
 \nu=\min\{b,L^{-1/2}\},\qquad q_1=c_1\nu,
 ```
 
-where $`0<c_1\le1/4`$ is small enough that
+where $`0\lt c_1\le1/4`$ is small enough that
 
 ```math
 C_*(c_1^2+c_1^4)\le\zeta_\epsilon.

@@ -16,7 +16,7 @@ Page numbers refer to the pinned arXiv PDF, not the journal pagination.
 |---|---|---|
 | II–IV, pp. 1–3 | Measurement choice and the direct-imaging penalty | [Model, §§1–2](../science/model-and-results.md#1-optical-experiment) |
 | V, pp. 3–4, Eqs. (5.1)–(5.8); C, pp. 13–14, Eq. (C14) | Position/mode probabilities and incoherent mixtures | [Receiver, §2](../science/finite-receiver.md#2-exact-outcome-probabilities) |
-| VII.A–C, pp. 6–8; VII.F, pp. 8–9 | Moment sensitivity and quantum limits | [Shape statistic](../science/finite-receiver.md#3-a-shape-test-with-a-uniform-variance-bound) |
+| VI.G, pp. 5–6; VII.A–C, pp. 6–8; VII.F, pp. 8–9 | Two-photon mutual references, moment sensitivity and quantum limits | [Shape statistic](../science/finite-receiver.md#3-a-shape-test-with-a-uniform-variance-bound), [joint relative-mode extension](../science/timing-and-calibration.md#3-why-the-two-proof-mechanisms-compose) |
 | VIII.A, p. 9; VIII.I–K, pp. 10–11 | Alignment, displacement, minimax reasoning and testing | [Risk](../science/model-and-results.md#2-allowed-receivers-and-statistical-task), [interpretation](../science/interpretation.md) |
 | A–B, p. 13 | Statistical and quantum measurement notation | [Quantum converse, §§2–4](../science/quantum-converse.md#2-from-a-pair-of-states-to-minimax-risk) |
 
@@ -113,7 +113,7 @@ The same four-outcome record supports three decisions. Their sufficient threshol
 | Information used | Quantum threshold in $`q`$ |
 |---|---|
 | Supplied variance bound | $`P=N^{-1}+b`$ |
-| Signal/calibration difference of nonzero-mode frequencies | $`C=N^{-1}+\sqrt{b/K}`$, for $`M>0`$ |
+| Signal/calibration difference of nonzero-mode frequencies | $`C=N^{-1}+\sqrt{b/K}`$, for $`M\gt 0`$ |
 | The quadratic shape statistic | $`S=N^{-1/2}+\sqrt b\,N^{-1/4}`$ |
 
 Here $`K=NM/(N+M)`$. A difference of independent sample frequencies has a variance containing both $`1/N`$ and $`1/M`$; their sum equals $`1/K`$. Thus $`K\asymp M`$ when calibration is scarce, and $`K\asymp N`$ when it is abundant. Unlimited calibration cannot supply missing signal photons.
@@ -138,7 +138,7 @@ The [direct-imaging proof](../science/direct-imaging.md) optimizes over all clas
 
 An attaining test alone cannot prove optimality. The [converse](../science/quantum-converse.md) chooses one admissible null/alternative pair and bounds the trace distance of their complete states. Every receiver's larger error is at least half of one minus that distance. This includes collective measurements, memory and adaptive processing.
 
-For $`b>0`$, take $`v_0=ub/2`$ and $`v_1=v_0-\omega uq`$, with $`\omega=N/(N+M)`$. Small enough $`q\le b/4`$ keeps both variances allowed. The collision argument bounds the joint distinguishability through a cost of order
+For $`b\gt 0`$, take $`v_0=ub/2`$ and $`v_1=v_0-\omega uq`$, with $`\omega=N/(N+M)`$. Small enough $`q\le b/4`$ keeps both variances allowed. The collision argument bounds the joint distinguishability through a cost of order
 
 ```math
 K\frac{q^2}{b}+N\frac{q^4}{b^2}.
@@ -148,10 +148,26 @@ The first term charges the residual two-sample broadening information; the secon
 
 The [collision-kernel proof](../science/collision-kernel.md) is a research-level dependency of this step. It constructs the weighted state using an inverse quarter root of a faithful Gaussian reference and justifies its domain, trace-class integral and tensor products. The sandwiched weighting cannot be replaced by a different quantum chi-square convention. A local Fisher-information calculation or a finite oscillator truncation does not by itself prove this uniform testing theorem.
 
-## 6. Reassemble the physical conclusion
+## 6. Reassemble the static physical conclusion
 
-For small fixed $`b>0`$ without calibration, the quantum scale passes from $`N^{-1}`$ to an order-$`b`$ uncertainty plateau and eventually to $`\sqrt b\,N^{-1/4}`$. More photons never worsen absolute resolution. A relative quantum advantage can nevertheless close when direct imaging reaches the same order near $`N\asymp b^{-2}`$, then return as the quantum shape statistic resolves below the plateau. The [interpretation](../science/interpretation.md) derives the crossovers and calibration requirements.
+For small fixed $`b\gt 0`$ without calibration, the quantum scale passes from $`N^{-1}`$ to an order-$`b`$ uncertainty plateau and eventually to $`\sqrt b\,N^{-1/4}`$. More photons never worsen absolute resolution. A relative quantum advantage can nevertheless close when direct imaging reaches the same order near $`N\asymp b^{-2}`$, then return as the quantum shape statistic resolves below the plateau. The [interpretation](../science/interpretation.md) derives the crossovers and calibration requirements.
 
 These are uniform matching orders at fixed error, with a bounded noise range and fixed local separation range. They are not exact risk curves or optimal constants. Physical separation is $`s=2\sqrt{uq}`$, so an exponent for $`q`$ must be halved when reporting an exponent for $`s`$.
 
-The known centroid, known real Gaussian amplitude, equal incoherent sources, independent per-photon jitter and identical signal/calibration variance remain essential. The [source comparison](../references/related-work.md) credits inherited methods and retains unresolved full-text comparison limits. The [verification guide](../verification/README.md) separates reproducible finite calculations from the analytical proofs. Join these ingredients at [M30](milestones.md#m30--reconstruct-the-resolution-frontier-as-one-story) after the map's background and narrative phases.
+The static theorem requires its known centroid, known real Gaussian amplitude, equal incoherent sources, independent per-photon jitter and identical signal/calibration variance. The separate joint model below replaces the centroid assumption with an explicitly supplied Brownian law and relative-mode access. The [source comparison](../references/related-work.md) credits inherited methods and retains unresolved full-text comparison limits. The [verification guide](../verification/README.md) separates reproducible finite calculations from the analytical proofs. Join these ingredients at [M30](milestones.md#m30--reconstruct-the-resolution-frontier-as-one-story) after the map's background and narrative phases.
+
+## 7. A moving signal: common motion cancels, independent jitter remains
+
+Tsang VI.G supplies the mutual-reference viewpoint for two-photon measurements; VII.A–B supplies the moment viewpoint. The [joint timing/calibration account](../science/timing-and-calibration.md) connects these foundations to the sister project [Quantum Imaging Timing](https://github.com/GoGoKo699/Quantum-Imaging-Timing). The Brownian covariance extraction, charged independent calibration and uniform joint testing theorem are additional project derivations, not statements attributed to the review.
+
+Work in the timing coordinate $`z=x/\sqrt{2u}`$. A signal photon has center $`m+B_i+J_i+S_i\sqrt{q_t}`$, where $`q_t=q/2`$ and $`\operatorname{Var}(J_i)=w=B/2`$. Taking the relative coordinate of two spatial registers removes their common initial centroid. If their internal Brownian variance is $`\delta`$, the relative Gaussian variance is $`w+\delta/2`$, while the source contribution is zero with probability $`1/2`$ and each $`\pm\sqrt{2q_t}`$ with probability $`1/4`$.
+
+The independent jitter survives because $`(J_2-J_1)/\sqrt2`$ has variance $`w`$. Sending $`\delta`$ to zero suppresses common Brownian increments, but does not suppress $`w`$. This is the physical distinction that prevents an arbitrarily good calibration from restoring the zero-jitter timing law.
+
+For example, let $`\delta=2\times10^{-6}`$, $`w=10^{-4}`$ and $`q_t=3\times10^{-5}`$. The relative Gaussian variance is $`1.01\times10^{-4}`$, and its total latent second moment is $`1.31\times10^{-4}`$. Its expected HG index is half that value. Reducing $`\delta`$ to zero still leaves Gaussian variance $`10^{-4}`$. Independent calibration photons have mean HG index $`w/2`$ and can estimate that variance; they cannot reveal either signal photon's realized $`J_i`$.
+
+For heterogeneous known gaps, correct the full HG indices by their known relative Brownian variances. Their common corrected mean is $`w+q_t`$; a corrected fourth-order statistic has mean $`(w+q_t)^2-q_t^2/3`$. Inverse-noise weights and unbiased cross-products recover shape information without pretending that the relative source is a binary mixture. The [shared receiver proof](https://github.com/GoGoKo699/Quantum-Imaging-Timing/blob/3cafbb49807a0928644ad244a5a0df15d86a17fb/science/joint-receiver.md) supplies the global variance bound and whole separated-alternative guarantee.
+
+The known-jitter timing root $`r_0`$ and gap sum $`S_2`$ then give $`r_0+\min\{b_t,\sqrt{b_t/M},S_2^{-1/4}\}`$, with the explicit endpoint conventions in the [joint theorem](../science/timing-and-calibration.md#2-the-bounded-schedule-frontier). Close doublets recover the static calibration-dependent order after the factor-two conversion; physical jitter still leaves $`N^{-1}+\sqrt{b_t/N}`$ with ample calibration. The general proof uses full relative-mode HG resolution, whereas four outcomes suffice for the controlled close-doublet corollary. Neither conclusion follows from a single SWAP parity bit alone.
+
+Use [M28–M30](milestones.md#m28--charge-the-calibration-that-changes-a-regime) to connect calibration budgeting, the transfer's assumptions and the two source models into one account. The same selected Tsang review guides both projects, while their bridges emphasize their distinct contributions.

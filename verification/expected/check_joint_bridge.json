@@ -1,0 +1,587 @@
+{
+  "close_doublet_reduction": [
+    {
+      "M": 0,
+      "N": 1000,
+      "b_timing": 0.0,
+      "calibration_scale_in_timing_units": 0.0005,
+      "joint_scale": 0.002724092485597367
+    },
+    {
+      "M": 10,
+      "N": 1000,
+      "b_timing": 0.0,
+      "calibration_scale_in_timing_units": 0.0005,
+      "joint_scale": 0.002724092485597367
+    },
+    {
+      "M": 1000,
+      "N": 1000,
+      "b_timing": 0.0,
+      "calibration_scale_in_timing_units": 0.0005,
+      "joint_scale": 0.002724092485597367
+    },
+    {
+      "M": 10000,
+      "N": 1000,
+      "b_timing": 0.0,
+      "calibration_scale_in_timing_units": 0.0005,
+      "joint_scale": 0.002724092485597367
+    },
+    {
+      "M": 0,
+      "N": 1000,
+      "b_timing": 1e-06,
+      "calibration_scale_in_timing_units": 0.000501,
+      "joint_scale": 0.0027256656897704425
+    },
+    {
+      "M": 10,
+      "N": 1000,
+      "b_timing": 1e-06,
+      "calibration_scale_in_timing_units": 0.000501,
+      "joint_scale": 0.0027256656897704425
+    },
+    {
+      "M": 1000,
+      "N": 1000,
+      "b_timing": 1e-06,
+      "calibration_scale_in_timing_units": 0.000501,
+      "joint_scale": 0.0027256656897704425
+    },
+    {
+      "M": 10000,
+      "N": 1000,
+      "b_timing": 1e-06,
+      "calibration_scale_in_timing_units": 0.000501,
+      "joint_scale": 0.0027256656897704425
+    },
+    {
+      "M": 0,
+      "N": 1000,
+      "b_timing": 0.001,
+      "calibration_scale_in_timing_units": 0.0015,
+      "joint_scale": 0.004223969134568767
+    },
+    {
+      "M": 10,
+      "N": 1000,
+      "b_timing": 0.001,
+      "calibration_scale_in_timing_units": 0.0015,
+      "joint_scale": 0.004223969134568767
+    },
+    {
+      "M": 1000,
+      "N": 1000,
+      "b_timing": 0.001,
+      "calibration_scale_in_timing_units": 0.0015,
+      "joint_scale": 0.004223969134568767
+    },
+    {
+      "M": 10000,
+      "N": 1000,
+      "b_timing": 0.001,
+      "calibration_scale_in_timing_units": 0.0012416198487095664,
+      "joint_scale": 0.003540196900585604
+    },
+    {
+      "M": 0,
+      "N": 1000,
+      "b_timing": 0.1,
+      "calibration_scale_in_timing_units": 0.04026353643835254,
+      "joint_scale": 0.08153390364109059
+    },
+    {
+      "M": 10,
+      "N": 1000,
+      "b_timing": 0.1,
+      "calibration_scale_in_timing_units": 0.04026353643835254,
+      "joint_scale": 0.08153390364109059
+    },
+    {
+      "M": 1000,
+      "N": 1000,
+      "b_timing": 0.1,
+      "calibration_scale_in_timing_units": 0.0105,
+      "joint_scale": 0.024466962408525667
+    },
+    {
+      "M": 10000,
+      "N": 1000,
+      "b_timing": 0.1,
+      "calibration_scale_in_timing_units": 0.007916198487095663,
+      "joint_scale": 0.017629240068694048
+    },
+    {
+      "M": 0,
+      "N": 10000,
+      "b_timing": 0.0,
+      "calibration_scale_in_timing_units": 5e-05,
+      "joint_scale": 0.00027312475019531025
+    },
+    {
+      "M": 10,
+      "N": 10000,
+      "b_timing": 0.0,
+      "calibration_scale_in_timing_units": 5e-05,
+      "joint_scale": 0.00027312475019531025
+    },
+    {
+      "M": 10000,
+      "N": 10000,
+      "b_timing": 0.0,
+      "calibration_scale_in_timing_units": 5e-05,
+      "joint_scale": 0.00027312475019531025
+    },
+    {
+      "M": 100000,
+      "N": 10000,
+      "b_timing": 0.0,
+      "calibration_scale_in_timing_units": 5e-05,
+      "joint_scale": 0.00027312475019531025
+    },
+    {
+      "M": 0,
+      "N": 10000,
+      "b_timing": 1e-06,
+      "calibration_scale_in_timing_units": 5.1e-05,
+      "joint_scale": 0.0002747007302985909
+    },
+    {
+      "M": 10,
+      "N": 10000,
+      "b_timing": 1e-06,
+      "calibration_scale_in_timing_units": 5.1e-05,
+      "joint_scale": 0.0002747007302985909
+    },
+    {
+      "M": 10000,
+      "N": 10000,
+      "b_timing": 1e-06,
+      "calibration_scale_in_timing_units": 5.1e-05,
+      "joint_scale": 0.0002747007302985909
+    },
+    {
+      "M": 100000,
+      "N": 10000,
+      "b_timing": 1e-06,
+      "calibration_scale_in_timing_units": 5.1e-05,
+      "joint_scale": 0.0002747007302985909
+    },
+    {
+      "M": 0,
+      "N": 10000,
+      "b_timing": 0.001,
+      "calibration_scale_in_timing_units": 0.00105,
+      "joint_scale": 0.0015789970113959438
+    },
+    {
+      "M": 10,
+      "N": 10000,
+      "b_timing": 0.001,
+      "calibration_scale_in_timing_units": 0.00105,
+      "joint_scale": 0.0015789970113959438
+    },
+    {
+      "M": 10000,
+      "N": 10000,
+      "b_timing": 0.001,
+      "calibration_scale_in_timing_units": 0.00036622776601683796,
+      "joint_scale": 0.0008952247774127817
+    },
+    {
+      "M": 100000,
+      "N": 10000,
+      "b_timing": 0.001,
+      "calibration_scale_in_timing_units": 0.0002845207879911715,
+      "joint_scale": 0.0006789970113959438
+    },
+    {
+      "M": 0,
+      "N": 10000,
+      "b_timing": 0.1,
+      "calibration_scale_in_timing_units": 0.0224106797749979,
+      "joint_scale": 0.041916388187024846
+    },
+    {
+      "M": 10,
+      "N": 10000,
+      "b_timing": 0.1,
+      "calibration_scale_in_timing_units": 0.0224106797749979,
+      "joint_scale": 0.041916388187024846
+    },
+    {
+      "M": 10000,
+      "N": 10000,
+      "b_timing": 0.1,
+      "calibration_scale_in_timing_units": 0.0032122776601683795,
+      "joint_scale": 0.007531313326371766
+    },
+    {
+      "M": 100000,
+      "N": 10000,
+      "b_timing": 0.1,
+      "calibration_scale_in_timing_units": 0.002395207879911715,
+      "joint_scale": 0.005369035666203386
+    },
+    {
+      "M": 0,
+      "N": 100000,
+      "b_timing": 0.0,
+      "calibration_scale_in_timing_units": 5e-06,
+      "joint_scale": 2.7319704014460092e-05
+    },
+    {
+      "M": 10,
+      "N": 100000,
+      "b_timing": 0.0,
+      "calibration_scale_in_timing_units": 5e-06,
+      "joint_scale": 2.7319704014460092e-05
+    },
+    {
+      "M": 100000,
+      "N": 100000,
+      "b_timing": 0.0,
+      "calibration_scale_in_timing_units": 5e-06,
+      "joint_scale": 2.7319704014460092e-05
+    },
+    {
+      "M": 1000000,
+      "N": 100000,
+      "b_timing": 0.0,
+      "calibration_scale_in_timing_units": 5e-06,
+      "joint_scale": 2.7319704014460092e-05
+    },
+    {
+      "M": 0,
+      "N": 100000,
+      "b_timing": 1e-06,
+      "calibration_scale_in_timing_units": 6e-06,
+      "joint_scale": 2.8887698499290295e-05
+    },
+    {
+      "M": 10,
+      "N": 100000,
+      "b_timing": 1e-06,
+      "calibration_scale_in_timing_units": 6e-06,
+      "joint_scale": 2.8887698499290295e-05
+    },
+    {
+      "M": 100000,
+      "N": 100000,
+      "b_timing": 1e-06,
+      "calibration_scale_in_timing_units": 6e-06,
+      "joint_scale": 2.8887698499290295e-05
+    },
+    {
+      "M": 1000000,
+      "N": 100000,
+      "b_timing": 1e-06,
+      "calibration_scale_in_timing_units": 6e-06,
+      "joint_scale": 2.8887698499290295e-05
+    },
+    {
+      "M": 0,
+      "N": 100000,
+      "b_timing": 0.001,
+      "calibration_scale_in_timing_units": 0.001005,
+      "joint_scale": 0.0011523834268472425
+    },
+    {
+      "M": 10,
+      "N": 100000,
+      "b_timing": 0.001,
+      "calibration_scale_in_timing_units": 0.001005,
+      "joint_scale": 0.0011523834268472425
+    },
+    {
+      "M": 100000,
+      "N": 100000,
+      "b_timing": 0.001,
+      "calibration_scale_in_timing_units": 0.000105,
+      "joint_scale": 0.00025238342684724246
+    },
+    {
+      "M": 1000000,
+      "N": 100000,
+      "b_timing": 0.001,
+      "calibration_scale_in_timing_units": 7.916198487095662e-05,
+      "joint_scale": 0.00018400620344892623
+    },
+    {
+      "M": 0,
+      "N": 100000,
+      "b_timing": 0.1,
+      "calibration_scale_in_timing_units": 0.012579334296829354,
+      "joint_scale": 0.02246756422105614
+    },
+    {
+      "M": 10,
+      "N": 100000,
+      "b_timing": 0.1,
+      "calibration_scale_in_timing_units": 0.012579334296829354,
+      "joint_scale": 0.02246756422105614
+    },
+    {
+      "M": 100000,
+      "N": 100000,
+      "b_timing": 0.1,
+      "calibration_scale_in_timing_units": 0.001005,
+      "joint_scale": 0.0023625602955334238
+    },
+    {
+      "M": 1000000,
+      "N": 100000,
+      "b_timing": 0.1,
+      "calibration_scale_in_timing_units": 0.0007466198487095663,
+      "joint_scale": 0.001678788061550262
+    }
+  ],
+  "normalization": [
+    {
+      "q_calibration": 0.0,
+      "q_timing": 0.0,
+      "separation": 0.0,
+      "u": 0.2
+    },
+    {
+      "q_calibration": 0.000125,
+      "q_timing": 6.25e-05,
+      "separation": 0.01,
+      "u": 0.2
+    },
+    {
+      "q_calibration": 0.05000000000000001,
+      "q_timing": 0.025000000000000005,
+      "separation": 0.2,
+      "u": 0.2
+    },
+    {
+      "q_calibration": 1.25,
+      "q_timing": 0.625,
+      "separation": 1.0,
+      "u": 0.2
+    },
+    {
+      "q_calibration": 0.0,
+      "q_timing": 0.0,
+      "separation": 0.0,
+      "u": 1.0
+    },
+    {
+      "q_calibration": 2.5e-05,
+      "q_timing": 1.25e-05,
+      "separation": 0.01,
+      "u": 1.0
+    },
+    {
+      "q_calibration": 0.010000000000000002,
+      "q_timing": 0.005000000000000001,
+      "separation": 0.2,
+      "u": 1.0
+    },
+    {
+      "q_calibration": 0.25,
+      "q_timing": 0.125,
+      "separation": 1.0,
+      "u": 1.0
+    },
+    {
+      "q_calibration": 0.0,
+      "q_timing": 0.0,
+      "separation": 0.0,
+      "u": 3.0
+    },
+    {
+      "q_calibration": 8.333333333333334e-06,
+      "q_timing": 4.166666666666667e-06,
+      "separation": 0.01,
+      "u": 3.0
+    },
+    {
+      "q_calibration": 0.003333333333333334,
+      "q_timing": 0.001666666666666667,
+      "separation": 0.2,
+      "u": 3.0
+    },
+    {
+      "q_calibration": 0.08333333333333333,
+      "q_timing": 0.041666666666666664,
+      "separation": 1.0,
+      "u": 3.0
+    }
+  ],
+  "physical_jitter_with_perfect_calibration": [
+    {
+      "N": 1000,
+      "SWAP_null_probability": 0.0,
+      "SWAP_signal_slope_at_zero": 0.5,
+      "known_jitter_floor_proxy": 0.001,
+      "known_w": 0.0
+    },
+    {
+      "N": 1000,
+      "SWAP_null_probability": 4.999925001247796e-06,
+      "SWAP_signal_slope_at_zero": 0.49998500037499133,
+      "known_jitter_floor_proxy": 0.0011,
+      "known_w": 1e-05
+    },
+    {
+      "N": 1000,
+      "SWAP_null_probability": 0.0004992512478164124,
+      "SWAP_signal_slope_at_zero": 0.49850374126964425,
+      "known_jitter_floor_proxy": 0.002,
+      "known_w": 0.001
+    },
+    {
+      "N": 1000,
+      "SWAP_null_probability": 0.04356453541236155,
+      "SWAP_signal_slope_at_zero": 0.3803628871563654,
+      "known_jitter_floor_proxy": 0.011,
+      "known_w": 0.1
+    },
+    {
+      "N": 10000,
+      "SWAP_null_probability": 0.0,
+      "SWAP_signal_slope_at_zero": 0.5,
+      "known_jitter_floor_proxy": 0.0001,
+      "known_w": 0.0
+    },
+    {
+      "N": 10000,
+      "SWAP_null_probability": 4.999925001247796e-06,
+      "SWAP_signal_slope_at_zero": 0.49998500037499133,
+      "known_jitter_floor_proxy": 0.0001316227766016838,
+      "known_w": 1e-05
+    },
+    {
+      "N": 10000,
+      "SWAP_null_probability": 0.0004992512478164124,
+      "SWAP_signal_slope_at_zero": 0.49850374126964425,
+      "known_jitter_floor_proxy": 0.00041622776601683793,
+      "known_w": 0.001
+    },
+    {
+      "N": 10000,
+      "SWAP_null_probability": 0.04356453541236155,
+      "SWAP_signal_slope_at_zero": 0.3803628871563654,
+      "known_jitter_floor_proxy": 0.0032622776601683792,
+      "known_w": 0.1
+    },
+    {
+      "N": 100000,
+      "SWAP_null_probability": 0.0,
+      "SWAP_signal_slope_at_zero": 0.5,
+      "known_jitter_floor_proxy": 1e-05,
+      "known_w": 0.0
+    },
+    {
+      "N": 100000,
+      "SWAP_null_probability": 4.999925001247796e-06,
+      "SWAP_signal_slope_at_zero": 0.49998500037499133,
+      "known_jitter_floor_proxy": 2e-05,
+      "known_w": 1e-05
+    },
+    {
+      "N": 100000,
+      "SWAP_null_probability": 0.0004992512478164124,
+      "SWAP_signal_slope_at_zero": 0.49850374126964425,
+      "known_jitter_floor_proxy": 0.00011,
+      "known_w": 0.001
+    },
+    {
+      "N": 100000,
+      "SWAP_null_probability": 0.04356453541236155,
+      "SWAP_signal_slope_at_zero": 0.3803628871563654,
+      "known_jitter_floor_proxy": 0.00101,
+      "known_w": 0.1
+    }
+  ],
+  "schema_version": 1,
+  "stationary_point_calibration": [
+    {
+      "mean_2Q": 0.0,
+      "physical_jitter_variance": 0.0,
+      "timing_jitter_variance": 0.0,
+      "u": 0.2,
+      "variance_2Q": 0.0
+    },
+    {
+      "mean_2Q": 2.4999999999999998e-05,
+      "physical_jitter_variance": 1e-05,
+      "timing_jitter_variance": 2.5e-05,
+      "u": 0.2,
+      "variance_2Q": 5.0001249999999995e-05
+    },
+    {
+      "mean_2Q": 0.02499999999999999,
+      "physical_jitter_variance": 0.01,
+      "timing_jitter_variance": 0.024999999999999998,
+      "u": 0.2,
+      "variance_2Q": 0.051249999999999976
+    },
+    {
+      "mean_2Q": 0.7499999999999998,
+      "physical_jitter_variance": 0.3,
+      "timing_jitter_variance": 0.7499999999999999,
+      "u": 0.2,
+      "variance_2Q": 2.6249999999999996
+    },
+    {
+      "mean_2Q": 0.0,
+      "physical_jitter_variance": 0.0,
+      "timing_jitter_variance": 0.0,
+      "u": 1.0,
+      "variance_2Q": 0.0
+    },
+    {
+      "mean_2Q": 4.9999999999999996e-06,
+      "physical_jitter_variance": 1e-05,
+      "timing_jitter_variance": 5e-06,
+      "u": 1.0,
+      "variance_2Q": 1.000005e-05
+    },
+    {
+      "mean_2Q": 0.004999999999999999,
+      "physical_jitter_variance": 0.01,
+      "timing_jitter_variance": 0.005,
+      "u": 1.0,
+      "variance_2Q": 0.010049999999999996
+    },
+    {
+      "mean_2Q": 0.14999999999999997,
+      "physical_jitter_variance": 0.3,
+      "timing_jitter_variance": 0.15,
+      "u": 1.0,
+      "variance_2Q": 0.345
+    },
+    {
+      "mean_2Q": 0.0,
+      "physical_jitter_variance": 0.0,
+      "timing_jitter_variance": 0.0,
+      "u": 3.0,
+      "variance_2Q": 0.0
+    },
+    {
+      "mean_2Q": 1.6666666666666665e-06,
+      "physical_jitter_variance": 1e-05,
+      "timing_jitter_variance": 1.6666666666666669e-06,
+      "u": 3.0,
+      "variance_2Q": 3.333338888888889e-06
+    },
+    {
+      "mean_2Q": 0.0016666666666666661,
+      "physical_jitter_variance": 0.01,
+      "timing_jitter_variance": 0.0016666666666666668,
+      "u": 3.0,
+      "variance_2Q": 0.0033388888888888886
+    },
+    {
+      "mean_2Q": 0.04999999999999999,
+      "physical_jitter_variance": 0.3,
+      "timing_jitter_variance": 0.049999999999999996,
+      "u": 3.0,
+      "variance_2Q": 0.10499999999999998
+    }
+  ]
+}

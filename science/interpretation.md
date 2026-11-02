@@ -89,7 +89,7 @@ This is the fully calibrated order within the model. At fixed positive noise it 
 Set $`b=N^{-1/2}`$. Without calibration, both classes have $`q\asymp N^{-1/2}`$. A budget $`M=O(\sqrt N)`$ does not improve that order. If
 
 ```math
-M\asymp N^\gamma,\qquad \frac12<\gamma\le1,
+M\asymp N^\gamma,\qquad \frac12\lt \gamma\le1,
 ```
 
 then $`K\asymp N^\gamma`$ and
@@ -101,6 +101,14 @@ q_{\mathrm{DI}}\asymp N^{-1/2}.
 ```
 
 The corresponding quantum physical separation is of order $`\sqrt u\,N^{-1/8-\gamma/4}`$. At $`\gamma=1`$, its exponent is $`3/8`$. This example keeps the resource responsible for the restored advantage visible: the additional independently jittered calibration photons.
+
+## When common Brownian motion is also present
+
+The [joint timing/calibration consequence](timing-and-calibration.md) keeps independent per-photon jitter separate from common motion. Its calibration source is a stabilized known point with the same jitter variance and independent realizations; it does not observe the signal trajectory. Relative photon-pair modes suppress the common centroid, while independent displacements remain.
+
+In that page's timing normalization, $`q_t=q/2`$ and $`b_t=b/2`$. Close doublets with internal Brownian variance $`O(N^{-1})`$ have the same calibration-dependent order as the static theorem after this fixed conversion. The fully calibrated order is still $`N^{-1}+\sqrt{b_t/N}`$, not the zero-jitter timing law at fixed positive jitter. For general bounded gaps, the physical floor and shape information depend on the complete schedule; the joint page defines their root and gap sum and gives the corresponding calibration crossover.
+
+The full general receiver resolves HG mode indices of relative spatial modes. This is a joint optical access assumption, stronger than declaring that a simple SWAP parity detector is available. The static four-outcome apparatus proved here remains independently sufficient for its stated experiment.
 
 ## What the uniform bound does and does not say
 

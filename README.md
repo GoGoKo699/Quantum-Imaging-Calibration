@@ -2,7 +2,13 @@
 
 **How many calibration photons does quantum superresolution need when the image jitter is unknown?** This project gives matching quantum and direct-imaging resolution laws for two equal incoherent sources under independent Gaussian jitter, with the calibration sample counted explicitly.
 
-The quantum lower bound permits every collective receiver on the signal and calibration photons. A fixed measurement with **four outcomes** attains the same order: the first three Hermite–Gaussian spatial modes and one outcome collecting the remaining modes.
+For the independent-jitter, known-centroid experiment, the quantum lower bound permits every collective receiver on the signal and calibration photons. A fixed measurement with **four outcomes** attains the same order: the first three Hermite–Gaussian spatial modes and one outcome collecting the remaining modes.
+
+## Sister project: motion, jitter and finite calibration
+
+**[Quantum Imaging Timing](https://github.com/GoGoKo699/Quantum-Imaging-Timing) is the sister project.** It studies a common Brownian centroid and known photon-arrival gaps; this repository develops independent unknown jitter and charges the calibration sample. Their [joint frontier](science/timing-and-calibration.md) combines both motions with a fully specified stabilized point calibration source. Close photon pairs suppress the common motion, while independent physical jitter remains even with unlimited calibration.
+
+Timing is the [authoritative home of the joint proof](https://github.com/GoGoKo699/Quantum-Imaging-Timing/blob/3cafbb49807a0928644ad244a5a0df15d86a17fb/science/joint-model.md). This repository retains the complete static theorem below and a self-contained joint-model consequence. The general joint receiver uses full HG mode resolution on relative spatial modes; the four-outcome statement above applies to the static theorem and, with a separate construction, the controlled close-doublet corollary. A SWAP parity bit alone is not assumed to implement that receiver.
 
 ## Main result
 
@@ -47,6 +53,7 @@ Start with the [model and complete claims](science/model-and-results.md), then f
 | The four-outcome apparatus and three attaining tests | [Finite receiver](science/finite-receiver.md) |
 | The matching limit and construction for position data | [Direct imaging](science/direct-imaging.md) |
 | Temporary plateaus, relative advantage and calibration thresholds | [Physical interpretation](science/interpretation.md) |
+| Common Brownian motion plus independent jitter, schedule dependence and calibration | [Joint timing/calibration consequence](science/timing-and-calibration.md) |
 | Established ingredients, nearby models and source limits | [Related work](references/related-work.md) and [bibliography](references/references.bib) |
 | Independent finite checks and reproduction commands | [Verification](verification/README.md) |
 
@@ -54,9 +61,9 @@ The [LLM reading guide](llms.txt) maps scientific questions to the authoritative
 
 ## Learn the project
 
-The single educational anchor is **Mankei Tsang, *Resolving starlight: a quantum perspective***, [arXiv:1906.02064v2](https://arxiv.org/pdf/1906.02064v2). The [Tsang bridge](learning/tsang-bridge.md) identifies the useful sections, translates the notation, and connects spatial-mode imaging to unknown jitter, charged calibration and the uniform testing theorem. It separates the review's foundations from the project's derivations and research-level proof dependencies.
+The single educational anchor is **Mankei Tsang, *Resolving starlight: a quantum perspective***, [arXiv:1906.02064v2](https://arxiv.org/pdf/1906.02064v2). The [Tsang bridge](learning/tsang-bridge.md) identifies the useful sections, translates the notation, and connects spatial-mode imaging to unknown jitter, charged calibration and the uniform testing theorem, then to the sister result for a moving centroid. Both repositories use this same source with project-specific bridges. It separates the review's foundations from the project's derivations and research-level proof dependencies.
 
-The [30-milestone map](learning/milestones.md) gives a common route through the science. Its **12 background/preliminaries milestones** assemble the optical and statistical experiment; its **18 narrative/innovation milestones** connect nuisance compensation, the universal converse, finite-receiver attainment and the calibration frontier. Each milestone records an understanding target, dependencies, a conceptual connection and source pointers. Use the bridge alongside the map for self-directed study; the direct proof route above remains available.
+The [30-milestone map](learning/milestones.md) gives a common route through the science. Its **12 background/preliminaries milestones** assemble the optical and statistical experiment; its **18 narrative/innovation milestones** connect nuisance compensation, the universal converse, finite-receiver attainment, the calibration frontier and its controlled transfer to a moving signal. Each milestone records an understanding target, dependencies, a conceptual connection and source pointers. Use the bridge alongside the map for self-directed study; the direct proof route above remains available.
 
 ## Reproduce the checks
 
@@ -71,7 +78,7 @@ The suite independently checks the collision formula using a truncated Hermite�
 
 ## Scope and attribution
 
-The model uses a known real Gaussian point-spread amplitude, known centroid and separation axis, equal incoherent sources, independent per-photon Gaussian jitter, and independent calibration photons with the same unknown variance. Counts are conditioned upon or have matched parameter-independent laws. Shared jitter realizations, unknown centroid, non-Gaussian motion and calibration mismatch require different analyses.
+The model uses a known real Gaussian point-spread amplitude, known centroid and separation axis, equal incoherent sources, independent per-photon Gaussian jitter, and independent calibration photons with the same unknown variance. Counts are conditioned upon or have matched parameter-independent laws. These are the assumptions of the static theorem. The separate [joint timing/calibration result](science/timing-and-calibration.md) covers an unrestricted initial centroid and a common Brownian path on a supplied bounded schedule, with the specified independent calibration source. Shared jitter realizations, non-Gaussian noise, unknown diffusion and calibration mismatch remain outside those guarantees.
 
 Classical Gaussian-mixture singularity, quantum spatial-moment advantages, Hermite–Gaussian detection and two-sample nuisance information are established ingredients. The account develops their joint uniform resolution frontier for this experiment, including an all-receiver converse and the calibration-dependent uncertainty plateau. The [source comparison](references/related-work.md) records both attribution and unresolved full-text access limits; it does not claim exhaustive priority certification.
 

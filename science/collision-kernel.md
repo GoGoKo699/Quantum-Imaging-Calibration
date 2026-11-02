@@ -10,10 +10,10 @@ The real Gaussian amplitude point-spread function is
 
 ```math
 \psi_x(y)=(2\pi u)^{-1/4}\exp\!\left[-\frac{(y-x)^2}{4u}\right],
-\qquad u>0.
+\qquad u\gt 0.
 ```
 
-Its intensity variance is $`u`$. For $`v>0`$, define
+Its intensity variance is $`u`$. For $`v\gt 0`$, define
 
 ```math
 \tau_v=\int_{\mathbb R}g_v(x)|\psi_x\rangle\langle\psi_x|\,dx,
@@ -58,7 +58,7 @@ Mehler's identity therefore gives
 \tau_v=(1-r)\sum_{n=0}^{\infty}r^n|n_w\rangle\langle n_w|.
 ```
 
-This representation is faithful for every $`v>0`$, although its inverse is unbounded. It also fixes the squeezing convention and all normalization factors used below.
+This representation is faithful for every $`v\gt 0`$, although its inverse is unbounded. It also fixes the squeezing convention and all normalization factors used below.
 
 For $`c_n(x)=\langle n_w|\psi_x\rangle`$, the Hermite generating function gives
 
@@ -156,11 +156,11 @@ Its Gaussian expectation is finite because
 
 ```math
 \frac{v_1(c_v-1)}u
-\le\frac{\sqrt{v(u+v)}-v}{u}<\frac12<1.
+\le\frac{\sqrt{v(u+v)}-v}{u}\lt \frac12\lt 1.
 ```
 
 The first strict inequality on the right follows from
-$`\sqrt{v(u+v)}<v+u/2`$. This proves integrability of the trace norm of the positive rank-one integrand. In particular, $`T_p`$ is Hilbert-Schmidt.
+$`\sqrt{v(u+v)}\lt v+u/2`$. This proves integrability of the trace norm of the positive rank-one integrand. In particular, $`T_p`$ is Hilbert-Schmidt.
 
 For the unweighted preparation $`\rho_p=\int|\psi_x\rangle\langle\psi_x|p(dx)`$,
 
@@ -203,7 +203,7 @@ A=\frac1u\begin{pmatrix}1&-c_v\\-c_v&1\end{pmatrix}.
 ```
 
 For independent normal variables with common variance $`v_1`$, the quadratic integral is finite because $`I+v_1A`$ is positive definite. Its smaller eigenvalue is
-$`1-v_1/(\ell_v+v)>0`$; the other eigenvalue is positive. Its determinant is
+$`1-v_1/(\ell_v+v)\gt 0`$; the other eigenvalue is positive. Its determinant is
 
 ```math
 \det(I+v_1A)
@@ -214,7 +214,7 @@ $`1-v_1/(\ell_v+v)>0`$; the other eigenvalue is positive. Its determinant is
 The equal-mean cases $`(a,a)`$ and $`(-a,-a)`$ contribute the exponential
 $`\exp[a^2/(\ell_v+\omega a^2)]`$. The opposite-mean cases contribute
 $`\exp[-a^2/(\ell_v-\omega a^2)]`$. Both denominators are positive since
-$`\omega a^2\le v<\ell_v`$.
+$`\omega a^2\le v\lt \ell_v`$.
 
 **Exact signal identity.** Averaging the four mean choices gives
 
@@ -235,11 +235,11 @@ $`\omega a^2\le v<\ell_v`$.
 }
 ```
 
-These identities hold throughout $`v>0`$, $`a\ge0`$, $`0\le\omega\le1`$, and $`v-\omega a^2\ge0`$. A small-$`z`$ assumption is needed only for the uniform bounds used next.
+These identities hold throughout $`v\gt 0`$, $`a\ge0`$, $`0\le\omega\le1`$, and $`v-\omega a^2\ge0`$. A small-$`z`$ assumption is needed only for the uniform bounds used next.
 
 ## 6. Uniform bounds and variance matching
 
-Denote the right side of the signal identity by $`F_\omega(z)`$. It is even and analytic in $`z`$ for $`|z|<1`$, uniformly for $`\omega\in[0,1]`$. Its quadratic coefficient is
+Denote the right side of the signal identity by $`F_\omega(z)`$. It is even and analytic in $`z`$ for $`|z|\lt 1`$, uniformly for $`\omega\in[0,1]`$. Its quadratic coefficient is
 $`\tfrac12(1-\omega)^2`$. Consequently,
 
 ```math
@@ -267,7 +267,7 @@ $`|F_\omega(z)|\le e^3/\sqrt{1-(3/4)^2}`$. Cauchy's coefficient bound, evenness,
 ```math
 \frac{e^3}{\sqrt{1-9/16}}
 \frac{|z|^4}{(3/4)^4[1-(2/3)^2]}
-<200|z|^4.
+\lt 200|z|^4.
 ```
 
 For the calibration expression, apply the mean-value theorem to

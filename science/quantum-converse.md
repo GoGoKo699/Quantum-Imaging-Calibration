@@ -6,7 +6,7 @@ This page proves the lower bound for every quantum receiver. Two different obstr
 
 ## 1. Experiment and fixed-error risk
 
-The known real Gaussian amplitude PSF has intensity variance $`u>0`$. Let
+The known real Gaussian amplitude PSF has intensity variance $`u\gt 0`$. Let
 
 ```math
 q=\frac{a^2}{u},\qquad 0\le v\le ub,\qquad 0\le b\le b_{\max}.
@@ -47,14 +47,14 @@ with $`K=0`$ at $`M=0`$, and define
 R_Q=\frac1N+\min\!\left\{b,\sqrt{\frac bL}\right\}.
 ```
 
-**Theorem.** There are $`c_\epsilon>0`$ and
+**Theorem.** There are $`c_\epsilon\gt 0`$ and
 $`N_0=N_0(\epsilon,b_{\max},q_{\max})`$ such that, for every
 $`N\ge N_0`$, every integer $`M\ge0`$ and every $`b\in[0,b_{\max}]`$,
 
 ```math
-0<h\le c_\epsilon R_Q
+0\lt h\le c_\epsilon R_Q
 \quad\Longrightarrow\quad
-\mathcal R_Q(h)>\epsilon.
+\mathcal R_Q(h)\gt \epsilon.
 ```
 
 The constants are independent of $`N,M,b,u`$. The [finite receiver](finite-receiver.md) supplies the matching upper bound at sufficiently large multiples of $`R_Q`$, whenever those thresholds fit below $`q_{\max}`$. The theorem concerns fixed nonzero error; it does not specify an optimal error exponent or a leading minimax constant.
@@ -159,7 +159,7 @@ This is an identity for the sandwiched collision weighting, not for an interchan
 
 ## 5. An admissible nuisance comparison
 
-Assume $`b>0`$. Select
+Assume $`b\gt 0`$. Select
 
 ```math
 v_0=\frac{ub}{2},\qquad
@@ -225,7 +225,7 @@ This case includes $`b=0`$.
 
 ### Case B: the nuisance scale dominates
 
-If $`r_2\ge r_1`$, then $`b>0`$ and $`q\le2cr_2\le2cb`$. Choose $`c\le1/8`$. The variances in Section 5 are then admissible, and
+If $`r_2\ge r_1`$, then $`b\gt 0`$ and $`q\le2cr_2\le2cb`$. Choose $`c\le1/8`$. The variances in Section 5 are then admissible, and
 
 ```math
 z\le\frac{2cb}{\sqrt{(b/2)(1+b/2)}}\le4c\le\frac12.
@@ -267,7 +267,7 @@ c_\epsilon=\frac{\delta^2}{100}.
 Both case bounds are then less than $`\delta/8`$. Every test has maximum error at least
 
 ```math
-\frac{1-\delta/8}{2}>\epsilon
+\frac{1-\delta/8}{2}\gt \epsilon
 ```
 
 at the constructed pair. This proves the theorem for all
@@ -287,9 +287,9 @@ Choose $`N_0`$ so that $`c_\epsilon`$ times this upper bound is at most $`q_{\ma
 |---|---|
 | $`M=0`$ | $`K=0`$, $`\omega=1`$; no calibration tensor factor is present. |
 | $`b=0`$ | Use the pure-state comparison only; $`R_Q=N^{-1}`$. No inverse of a pure state is evaluated. |
-| $`b\to0`$ | The positive reference variance is selected separately for each $`b>0`$; all constants remain uniform. |
+| $`b\to0`$ | The positive reference variance is selected separately for each $`b\gt 0`$; all constants remain uniform. |
 | Very large $`M`$ | $`K\le N`$ and the proof is unchanged; calibration photons are counted explicitly. |
-| $`h< c_\epsilon R_Q`$ | The same hard point at $`q=c_\epsilon R_Q`$ remains in the alternative. |
+| $`h\lt  c_\epsilon R_Q`$ | The same hard point at $`q=c_\epsilon R_Q`$ remains in the alternative. |
 
 The nuisance lower bound is an experiment comparison, not a claim that its selected pair is uniquely least favorable. The receiver may know the upper bound $`b`$ and all other specified model parameters. It does not receive the realized jitter or a reference system correlated with that realization. Shared jitter across photons, an unknown centroid, non-Gaussian jitter, a mismatch between the two streams, or active probing define different experiments.
 

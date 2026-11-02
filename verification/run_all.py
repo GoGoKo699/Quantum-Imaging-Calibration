@@ -17,7 +17,7 @@ def main() -> None:
     args = parser.parse_args()
     directory = Path(__file__).resolve().parent
     results = {}
-    for name in ("check_collision.py", "check_receiver.py", "check_direct_imaging.py"):
+    for name in ("check_collision.py", "check_receiver.py", "check_direct_imaging.py", "check_joint_bridge.py"):
         command = [sys.executable, str(directory / name)]
         if args.record:
             command.append("--record")
