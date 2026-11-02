@@ -8,7 +8,7 @@ For the independent-jitter, known-centroid experiment, the quantum lower bound p
 
 **[Quantum Imaging Timing](https://github.com/GoGoKo699/Quantum-Imaging-Timing) is the sister project.** It studies a common Brownian centroid and known photon-arrival gaps; this repository develops independent unknown jitter and charges the calibration sample. Their [joint frontier](science/timing-and-calibration.md) combines both motions with a fully specified stabilized point calibration source. Close photon pairs suppress the common motion, while independent physical jitter remains even with unlimited calibration.
 
-Timing is the [authoritative home of the joint proof](https://github.com/GoGoKo699/Quantum-Imaging-Timing/blob/3cafbb49807a0928644ad244a5a0df15d86a17fb/science/joint-model.md). This repository retains the complete static theorem below and a self-contained joint-model consequence. The general joint receiver uses full HG mode resolution on relative spatial modes; the four-outcome statement above applies to the static theorem and, with a separate construction, the controlled close-doublet corollary. A SWAP parity bit alone is not assumed to implement that receiver.
+Timing is the [authoritative home of the joint proof](https://github.com/GoGoKo699/Quantum-Imaging-Timing/blob/339a4ec9c2488d6a26b7bcb8d9d4168beecaba2e/science/joint-model.md). This repository retains the complete static theorem below and a self-contained joint-model consequence. The general joint receiver uses full HG mode resolution on relative spatial modes; the four-outcome statement above applies to the static theorem and, with a separate construction, the controlled close-doublet corollary. A SWAP parity bit alone is not assumed to implement that receiver.
 
 ## Main result
 

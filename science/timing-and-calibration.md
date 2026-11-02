@@ -4,7 +4,7 @@
 
 Independent calibration learns a jitter distribution; it does not tell the receiver how a particular signal photon was displaced. This distinction remains consequential when the signal centroid follows a common Brownian path. Closely timed photons can provide a mutual spatial reference for that path, but each retains its own independent jitter.
 
-This page gives the combined experiment, its resolution frontier and the calibration consequences in a self-contained notation. **[Quantum Imaging Timing](https://github.com/GoGoKo699/Quantum-Imaging-Timing) owns the full joint theorem and proof:** [joint model](https://github.com/GoGoKo699/Quantum-Imaging-Timing/blob/3cafbb49807a0928644ad244a5a0df15d86a17fb/science/joint-model.md), [collective converse](https://github.com/GoGoKo699/Quantum-Imaging-Timing/blob/3cafbb49807a0928644ad244a5a0df15d86a17fb/science/joint-converse.md), [weighted pair receiver](https://github.com/GoGoKo699/Quantum-Imaging-Timing/blob/3cafbb49807a0928644ad244a5a0df15d86a17fb/science/joint-receiver.md), and [regimes](https://github.com/GoGoKo699/Quantum-Imaging-Timing/blob/3cafbb49807a0928644ad244a5a0df15d86a17fb/science/jitter-calibration-regimes.md). The [collision kernel](collision-kernel.md) and independent-jitter theorem remain this repository's contributions and imported proof ingredients. The joint result is one shared result, rather than two independent discoveries.
+This page gives the combined experiment, its resolution frontier and the calibration consequences in a self-contained notation. **[Quantum Imaging Timing](https://github.com/GoGoKo699/Quantum-Imaging-Timing) owns the full joint theorem and proof:** [joint model](https://github.com/GoGoKo699/Quantum-Imaging-Timing/blob/339a4ec9c2488d6a26b7bcb8d9d4168beecaba2e/science/joint-model.md), [collective converse](https://github.com/GoGoKo699/Quantum-Imaging-Timing/blob/339a4ec9c2488d6a26b7bcb8d9d4168beecaba2e/science/joint-converse.md), [weighted pair receiver](https://github.com/GoGoKo699/Quantum-Imaging-Timing/blob/339a4ec9c2488d6a26b7bcb8d9d4168beecaba2e/science/joint-receiver.md), and [regimes](https://github.com/GoGoKo699/Quantum-Imaging-Timing/blob/339a4ec9c2488d6a26b7bcb8d9d4168beecaba2e/science/jitter-calibration-regimes.md). The [collision kernel](collision-kernel.md) and independent-jitter theorem remain this repository's contributions and imported proof ingredients. The joint result is one shared result, rather than two independent discoveries.
 
 ## 1. Two motions and one fully specified calibration source
 
@@ -65,16 +65,16 @@ R_{\mathrm{DI},t}=N^{-1/2}+\min\{b_t,L^{-1/2}\},
 \qquad L=\max\{\sqrt N,K\},\quad K=\frac{NM}{N+M},
 ```
 
-with $`K=0`$ at $`M=0`$. Its optical position variance remains nonzero at zero jitter. This explains why its order has no additional gap dependence under a fixed upper gap bound. The shared [model](https://github.com/GoGoKo699/Quantum-Imaging-Timing/blob/3cafbb49807a0928644ad244a5a0df15d86a17fb/science/joint-model.md) states the complete comparison; ordinary relative position differences, calibrated second moments and fourth cumulants attain it.
+with $`K=0`$ at $`M=0`$. Its optical position variance remains nonzero at zero jitter. This explains why its order has no additional gap dependence under a fixed upper gap bound. The shared [model](https://github.com/GoGoKo699/Quantum-Imaging-Timing/blob/339a4ec9c2488d6a26b7bcb8d9d4168beecaba2e/science/joint-model.md) states the complete comparison; ordinary relative position differences, calibrated second moments and fourth cumulants attain it.
 
 ## 3. Why the two proof mechanisms compose
 
 The [independent-jitter lower bound](quantum-converse.md) survives adding a parameter-independent Brownian translation channel to signal registers. That simple transfer alone is not enough for the full schedule-dependent frontier. The joint converse also extracts independent noise from the correlated Brownian covariance.
 
-Under an auxiliary allowed Gaussian prior for $`m`$, write the Brownian covariance as $`C=L_B\operatorname{diag}(u_1,\ldots,u_N)L_B^{\mathsf T}`$, where $`u_1=V`$, $`u_i=\nu_i`$ and $`u_{N+1}=\infty`$. Its precision form implies
+Under an auxiliary allowed Gaussian prior for $`m`$, write the Brownian covariance as $`C=L_B\mathrm{diag}(u_1,\ldots,u_N)L_B^{\mathsf T}`$, where $`u_1=V`$, $`u_i=\nu_i`$ and $`u_{N+1}=\infty`$. Its precision form implies
 
 ```math
-C\succeq\operatorname{diag}(c_i),\qquad
+C\succeq\mathrm{diag}(c_i),\qquad
 c_i=\left[2\left(\frac1{u_i}+\frac1{u_{i+1}}\right)\right]^{-1}.
 ```
 
@@ -95,7 +95,7 @@ A_i=2Q_i-d_i,\qquad
 B_i=\frac43Q_i(Q_i-1)-4d_iQ_i+d_i^2.
 ```
 
-Their means are $`w+q_t`$ and $`(w+q_t)^2-q_t^2/3`$. Weighted means and an unbiased cross-product statistic separate variance and shape, with weights selected from the known gaps and $`b_t`$. The global shape variance bound controls the full separated alternative, including $`q_t`$ much larger than $`b_t`$. See the shared [receiver proof](https://github.com/GoGoKo699/Quantum-Imaging-Timing/blob/3cafbb49807a0928644ad244a5a0df15d86a17fb/science/joint-receiver.md) for the weights, normalization and error bounds.
+Their means are $`w+q_t`$ and $`(w+q_t)^2-q_t^2/3`$. Weighted means and an unbiased cross-product statistic separate variance and shape, with weights selected from the known gaps and $`b_t`$. The global shape variance bound controls the full separated alternative, including $`q_t`$ much larger than $`b_t`$. See the shared [receiver proof](https://github.com/GoGoKo699/Quantum-Imaging-Timing/blob/339a4ec9c2488d6a26b7bcb8d9d4168beecaba2e/science/joint-receiver.md) for the weights, normalization and error bounds.
 
 This receiver is a genuine joint spatial POVM with full HG mode resolution. The oscillator mode index is not an extra photon resource. The construction does not follow merely from access to a SWAP parity bit or an ordinary HOM device. A four-outcome construction is available for the close-doublet corollary below, with its stated local range; four outcomes are not asserted for arbitrary heterogeneous schedules.
 
@@ -108,7 +108,7 @@ R_{Q,t}=N^{-1}+\min\left\{b_t,\sqrt{\frac{b_t}{L}}\right\},
 \qquad L=\max\{\sqrt N,K\}.
 ```
 
-The direct close-doublet proof can also allow arbitrarily large between-doublet motion. Shrinking the internal intervals requires the timing and temporal-mode access specified by Timing's [physical interface](https://github.com/GoGoKo699/Quantum-Imaging-Timing/blob/3cafbb49807a0928644ad244a5a0df15d86a17fb/science/physical-interface.md).
+The direct close-doublet proof can also allow arbitrarily large between-doublet motion. Shrinking the internal intervals requires the timing and temporal-mode access specified by Timing's [physical interface](https://github.com/GoGoKo699/Quantum-Imaging-Timing/blob/339a4ec9c2488d6a26b7bcb8d9d4168beecaba2e/science/physical-interface.md).
 
 Without calibration, the three quantum regimes are $`N^{-1}`$ when $`b_t\lesssim N^{-1}`$, an uncertainty plateau of order $`b_t`$ when $`N^{-1}\ll b_t\lesssim N^{-1/2}`$, and the shape branch $`\sqrt{b_t}N^{-1/4}`$ at larger bounds. Calibration improves the active uncertainty branch parametrically only when
 
